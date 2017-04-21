@@ -1,8 +1,10 @@
-@mixin header-bg($image, $font-size: 10vw) {
-  background:url($image) no-repeat top center;
-  background-size: cover;
-  font-family: 'Montserrat', sans-serif;
-  font-size: $font-size;
+@mixin transition-opacity() {
+  -webkit-transition: opacity .25s ease;
+  -moz-transition: opacity .25s ease;
+  transition: opacity .25s ease;
+}
+
+@mixin fade() {
   position: relative;
 
   &:before{
@@ -17,11 +19,14 @@
     top: 0;
     left: 0;
     background-blend-mode: multiply;
+
   }
 }
 
-@mixin transition-opacity() {
-  -webkit-transition: opacity .25s ease;
-  -moz-transition: opacity .25s ease;
-  transition: opacity .25s ease;
+@mixin header-bg($image, $font-size: 10vw) {
+  background:url($image) no-repeat top center;
+  background-size: cover;
+  font-family: 'Montserrat', sans-serif;
+  font-size: $font-size;
+  @include fade();
 }

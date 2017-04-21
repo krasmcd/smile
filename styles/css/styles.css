@@ -614,6 +614,25 @@ header {
     header .anchor:hover, header .anchor.hover {
       opacity: .65; }
 
+#map {
+  height: 70vh;
+  margin-bottom: 16%;
+  width: 100%; }
+
+a[href^="http://maps.google.com/maps"] {
+  display: none !important; }
+
+a[href^="https://maps.google.com/maps"] {
+  display: none !important; }
+
+.gmnoprint a, .gmnoprint span, .gm-style-cc {
+  display: none; }
+
+/*
+.gmnoprint div {
+    background:none !important;
+}
+*/
 .nav-wrapper {
   background: #0c0c0c;
   display: block;
@@ -711,5 +730,7 @@ header {
   @media (max-width: 640px) {
     .thumb {
       margin: .5% 0; } }
+  .thumb:hover .overlay {
+    opacity: 1; }
 
 /*# sourceMappingURL=styles.css.map */
