@@ -1,11 +1,3 @@
-body {
-  background: #111;
-  box-sizing: border-box;
-  color: #FFF;
-  margin: 0;
-  padding: 0;
-  text-align: center; }
-
 body, h1, h2, h5 {
   font-family: "Merriweather", "Open nns", nns-serif; }
 
@@ -39,9 +31,51 @@ p {
   line-height: 1.5em;
   font-weight: 300; }
 
+body {
+  background: #111;
+  box-sizing: border-box;
+  color: #FFF;
+  margin: 0;
+  padding: 0;
+  text-align: center; }
+
 img {
   max-width: 100%;
   height: auto; }
+
+footer {
+  display: block;
+  font-size: .9em;
+  margin: 0 auto;
+  padding: 20px 0 20px 0;
+  text-align: center; }
+
+@-moz-document url-prefix() {
+  .gallery .photo {
+    margin: 0 auto 180px; }
+    @media (max-width: 640px) {
+      .gallery .photo {
+        margin: 0 auto 90px; } } }
+.gallery {
+  display: flex;
+  flex-direction: column; }
+  .gallery .photo {
+    max-width: 1000px;
+    margin: 0 auto 8%; }
+    @media (max-width: 640px) {
+      .gallery .photo {
+        margin: 0 auto 20%; } }
+    .gallery .photo h2 {
+      margin-top: 10px;
+      opacity: .2;
+      -webkit-transition: opacity .25s ease;
+      -moz-transition: opacity .25s ease;
+      transition: opacity .25s ease; }
+      @media (max-width: 640px) {
+        .gallery .photo h2 {
+          opacity: 1; } }
+    .gallery .photo:hover h2 {
+      opacity: 1; }
 
 header {
   display: flex;
@@ -50,7 +84,7 @@ header {
   width: 100%;
   height: 100%; }
   header.home {
-    background: url("img/home_bg_color.jpg") no-repeat top center;
+    background: url("../../img/home_bg_color.jpg") no-repeat top center;
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
     font-size: 1em;
@@ -72,7 +106,7 @@ header {
       background-blend-mode: multiply; }
     @media (max-width: 640px) {
       header.home {
-        background: url("img/home_bg_color-SM.jpg") no-repeat top center;
+        background: url("../../img/home_bg_color-SM.jpg") no-repeat top center;
         background-size: cover;
         font-family: 'Montserrat', sans-serif;
         font-size: 1.1em;
@@ -93,7 +127,7 @@ header {
           left: 0;
           background-blend-mode: multiply; } }
   header.argentina {
-    background: url("img/argentina/argentina_28.jpg") no-repeat top center;
+    background: url("../../img/argentina/argentina_28.jpg") no-repeat top center;
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
     font-size: 10vw;
@@ -114,7 +148,7 @@ header {
       left: 0;
       background-blend-mode: multiply; }
   header.australia {
-    background: url("img/thumb/australia.jpg") no-repeat top center;
+    background: url("../../img/thumb/australia.jpg") no-repeat top center;
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
     font-size: 10vw;
@@ -135,7 +169,7 @@ header {
       left: 0;
       background-blend-mode: multiply; }
   header.budapest {
-    background: url("img/budapest/budapest_1.jpg") no-repeat top center;
+    background: url("../../img/budapest/budapest_1.jpg") no-repeat top center;
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
     font-size: 10vw;
@@ -158,7 +192,7 @@ header {
     header.budapest .anchor {
       opacity: .5; }
   header.cambodia {
-    background: url("img/thumb/cambodia.jpg") no-repeat top center;
+    background: url("../../img/thumb/cambodia.jpg") no-repeat top center;
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
     font-size: 10vw;
@@ -181,7 +215,7 @@ header {
     header.cambodia .anchor {
       opacity: .5; }
   header.croatia {
-    background: url("img/thumb/croatia.jpg") no-repeat top center;
+    background: url("../../img/thumb/croatia.jpg") no-repeat top center;
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
     font-size: 10vw;
@@ -202,7 +236,7 @@ header {
       left: 0;
       background-blend-mode: multiply; }
   header.galapagos {
-    background: url("img/galapagos/galapagos_6.jpg") no-repeat top center;
+    background: url("../../img/galapagos/galapagos_6.jpg") no-repeat top center;
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
     font-size: 10vw;
@@ -223,7 +257,7 @@ header {
       left: 0;
       background-blend-mode: multiply; }
   header.istanbul {
-    background: url("img/thumb/istanbul.jpg") no-repeat top center;
+    background: url("../../img/thumb/istanbul.jpg") no-repeat top center;
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
     font-size: 10vw;
@@ -246,7 +280,7 @@ header {
     header.istanbul .anchor {
       opacity: .4; }
   header.london {
-    background: url("img/thumb/london.jpg") no-repeat top center;
+    background: url("../../img/thumb/london.jpg") no-repeat top center;
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
     font-size: 10vw;
@@ -267,7 +301,7 @@ header {
       left: 0;
       background-blend-mode: multiply; }
   header.nepal {
-    background: url("img/nepal/nepal_7.jpg") no-repeat top center;
+    background: url("../../img/nepal/nepal_7.jpg") no-repeat top center;
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
     font-size: 10vw;
@@ -288,7 +322,7 @@ header {
       left: 0;
       background-blend-mode: multiply; }
   header.newzealand {
-    background: url("img/thumb/newzealand.jpg") no-repeat top center;
+    background: url("../../img/thumb/newzealand.jpg") no-repeat top center;
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
     font-size: 10vw;
@@ -309,12 +343,12 @@ header {
       left: 0;
       background-blend-mode: multiply; }
   header.norway {
-    background: url("img/norway/hero.jpg") no-repeat top center;
+    background: url("../../img/norway/hero.jpg") no-repeat top center;
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
     font-size: 10vw;
     position: relative;
-    background: url("img/norway/hero.jpg") no-repeat 81% top; }
+    background: url("../../img/norway/hero.jpg") no-repeat 81% top; }
     header.norway:before {
       content: ' ';
       display: block;
@@ -331,7 +365,7 @@ header {
       left: 0;
       background-blend-mode: multiply; }
   header.peru {
-    background: url("img/peru/peru_13.jpg") no-repeat top center;
+    background: url("../../img/peru/peru_13.jpg") no-repeat top center;
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
     font-size: 10vw;
@@ -352,7 +386,7 @@ header {
       left: 0;
       background-blend-mode: multiply; }
   header.quilotoa {
-    background: url("img/thumb/quilotoa.jpg") no-repeat top center;
+    background: url("../../img/thumb/quilotoa.jpg") no-repeat top center;
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
     font-size: 10vw;
@@ -373,7 +407,7 @@ header {
       left: 0;
       background-blend-mode: multiply; }
   header.reykjavik {
-    background: url("img/thumb/reykjavik.JPG") no-repeat top center;
+    background: url("../../img/thumb/reykjavik.JPG") no-repeat top center;
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
     font-size: 10vw;
@@ -394,7 +428,7 @@ header {
       left: 0;
       background-blend-mode: multiply; }
   header.rome {
-    background: url("img/rome/rome_6.jpg") no-repeat top center;
+    background: url("../../img/rome/rome_6.jpg") no-repeat top center;
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
     font-size: 10vw;
@@ -415,7 +449,7 @@ header {
       left: 0;
       background-blend-mode: multiply; }
   header.slovenia {
-    background: url("img/thumb/slovenia.jpg") no-repeat top center;
+    background: url("../../img/thumb/slovenia.jpg") no-repeat top center;
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
     font-size: 10vw;
@@ -436,7 +470,7 @@ header {
       left: 0;
       background-blend-mode: multiply; }
   header.southafrica {
-    background: url("img/southafrica/hero.jpg") no-repeat top center;
+    background: url("../../img/southafrica/hero.jpg") no-repeat top center;
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
     font-size: 10vw;
@@ -457,7 +491,7 @@ header {
       left: 0;
       background-blend-mode: multiply; }
   header.squamish {
-    background: url("img/thumb/squamish.jpg") no-repeat top center;
+    background: url("../../img/thumb/squamish.jpg") no-repeat top center;
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
     font-size: 10vw;
@@ -480,7 +514,7 @@ header {
     header.squamish .anchor {
       opacity: .5; }
   header.thailand {
-    background: url("img/thumb/thailand.jpg") no-repeat top center;
+    background: url("../../img/thumb/thailand.jpg") no-repeat top center;
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
     font-size: 10vw;
@@ -503,7 +537,7 @@ header {
     header.thailand .anchor {
       opacity: .5; }
   header.tofo {
-    background: url("img/thumb/tofo.jpg") no-repeat top center;
+    background: url("../../img/thumb/tofo.jpg") no-repeat top center;
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
     font-size: 10vw;
@@ -551,7 +585,7 @@ header {
           margin: auto;
           max-width: 80%; } }
     header + .quote:before {
-      background: url("img/quotation.svg") no-repeat;
+      background: url("../../img/quotation.svg") no-repeat;
       background-size: contain;
       content: ' ';
       display: block;
@@ -580,39 +614,33 @@ header {
     header .anchor:hover, header .anchor.hover {
       opacity: .65; }
 
-footer {
+.nav-wrapper {
+  background: #0c0c0c;
   display: block;
-  font-size: .9em;
-  margin: 0 auto;
-  padding: 20px 0 20px 0;
-  text-align: center; }
-
-.arrow {
-  position: absolute;
-  bottom: 10%;
-  right: 0;
-  left: 0;
-  margin: auto;
-  opacity: 1; }
-  .arrow.hover, .arrow:hover {
-    opacity: 1; }
-
-#photos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; }
-  #photos a {
-    width: 50%; }
-    @media (max-width: 640px) {
-      #photos a {
-        width: 100%; } }
-
-.thumb {
-  margin: .5%;
-  position: relative; }
-  @media (max-width: 640px) {
-    .thumb {
-      margin: .5% 0; } }
+  padding: 30px 0;
+  width: 100%; }
+  .nav-wrapper .nav {
+    max-width: 1000px;
+    margin: 0 auto; }
+    .nav-wrapper .nav .item {
+      display: inline-block;
+      width: 32%;
+      max-width: 300px;
+      margin: 15px;
+      height: auto;
+      position: relative; }
+      @media (max-width: 640px) {
+        .nav-wrapper .nav .item {
+          margin: 2px 0;
+          max-width: none;
+          width: 100%; } }
+      .nav-wrapper .nav .item .overlay {
+        opacity: 1; }
+        .nav-wrapper .nav .item .overlay .title {
+          font-size: 2em;
+          top: 38%; }
+      .nav-wrapper .nav .item:hover .title {
+        text-decoration: underline; }
 
 .overlay {
   background: rgba(0, 0, 0, 0.55);
@@ -657,63 +685,31 @@ footer {
     font-weight: 100;
     margin-top: 4px; }
 
-.thumb:hover .overlay {
+.arrow {
+  position: absolute;
+  bottom: 10%;
+  right: 0;
+  left: 0;
+  margin: auto;
   opacity: 1; }
+  .arrow.hover, .arrow:hover {
+    opacity: 1; }
 
-.gallery {
+#photos {
   display: flex;
-  flex-direction: column; }
-  .gallery .photo {
-    max-width: 1000px;
-    margin: 0 auto 8%; }
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  #photos a {
+    width: 50%; }
     @media (max-width: 640px) {
-      .gallery .photo {
-        margin: 0 auto 20%; } }
-    .gallery .photo h2 {
-      margin-top: 10px;
-      opacity: .2;
-      -webkit-transition: opacity .25s ease;
-      -moz-transition: opacity .25s ease;
-      transition: opacity .25s ease; }
-      @media (max-width: 640px) {
-        .gallery .photo h2 {
-          opacity: 1; } }
-    .gallery .photo:hover h2 {
-      opacity: 1; }
+      #photos a {
+        width: 100%; } }
 
-.nav-wrapper {
-  background: #0c0c0c;
-  display: block;
-  padding: 30px 0;
-  width: 100%; }
-  .nav-wrapper .nav {
-    max-width: 1000px;
-    margin: 0 auto; }
-    .nav-wrapper .nav .item {
-      display: inline-block;
-      width: 32%;
-      max-width: 300px;
-      margin: 15px;
-      height: auto;
-      position: relative; }
-      @media (max-width: 640px) {
-        .nav-wrapper .nav .item {
-          margin: 2px 0;
-          max-width: none;
-          width: 100%; } }
-      .nav-wrapper .nav .item .overlay {
-        opacity: 1; }
-        .nav-wrapper .nav .item .overlay .title {
-          font-size: 2em;
-          top: 38%; }
-      .nav-wrapper .nav .item:hover .title {
-        text-decoration: underline; }
+.thumb {
+  margin: .5%;
+  position: relative; }
+  @media (max-width: 640px) {
+    .thumb {
+      margin: .5% 0; } }
 
-@-moz-document url-prefix() {
-  .gallery .photo {
-    margin: 0 auto 180px; }
-    @media (max-width: 640px) {
-      .gallery .photo {
-        margin: 0 auto 90px; } } }
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=styles.css.map */

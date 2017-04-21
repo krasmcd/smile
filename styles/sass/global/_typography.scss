@@ -1,0 +1,36 @@
+body, h1, h2, h5 {
+  font-family: 'Merriweather', 'Open nns', nns-serif
+}
+
+h1 {
+  font-size:1.4em;
+  font-weight:300;
+}
+
+h2, footer {
+  color:$caption-text;
+  font-size:1em;
+  font-weight:100;
+  @media (max-width:$screen-sm){font-size:70%;}
+}
+
+h2 {
+  @media (max-width:$screen-sm){margin:5px 0 20px 0;}
+}
+
+h5 {
+  font-weight: 100;
+  opacity: .8;
+}
+
+a {
+  border:none;
+  color:$link;
+  text-decoration:none;
+}
+
+p {
+  font-size:1.2em;
+  line-height:1.5em;
+  font-weight:300;
+}

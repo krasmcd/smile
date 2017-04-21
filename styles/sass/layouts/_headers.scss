@@ -1,0 +1,181 @@
+header {
+  display:flex;
+  flex-direction: column;
+  position:relative;
+  width: 100%;
+  height: 100%;
+
+  &.home {
+    @include header-bg('../../img/home_bg_color.jpg', 1em);
+
+    @media (max-width: $screen-sm) {
+      @include header-bg('../../img/home_bg_color-SM.jpg', 1.1em);
+    }
+  }
+
+  &.argentina {
+    @include header-bg('../../img/argentina/argentina_28.jpg');
+  }
+
+  &.australia {
+    @include header-bg('../../img/thumb/australia.jpg');
+  }
+
+  &.budapest {
+    @include header-bg('../../img/budapest/budapest_1.jpg');
+
+    .anchor {opacity: .5;}
+  }
+
+  &.cambodia {
+    @include header-bg('../../img/thumb/cambodia.jpg');
+
+    .anchor {opacity: .5;}
+  }
+
+  &.croatia {
+    @include header-bg('../../img/thumb/croatia.jpg');
+  }
+
+  &.galapagos {
+    @include header-bg('../../img/galapagos/galapagos_6.jpg');
+  }
+
+  &.istanbul {
+    @include header-bg('../../img/thumb/istanbul.jpg');
+
+    .anchor {opacity: .4;}
+  }
+
+  &.london{
+    @include header-bg('../../img/thumb/london.jpg');
+  }
+
+  &.nepal{
+    @include header-bg('../../img/nepal/nepal_7.jpg');
+  }
+
+  &.newzealand{
+    @include header-bg('../../img/thumb/newzealand.jpg');
+  }
+
+  &.norway {
+    @include header-bg('../../img/norway/hero.jpg');
+    background:url('../../img/norway/hero.jpg') no-repeat 81% top;
+  }
+
+  &.peru {
+    @include header-bg('../../img/peru/peru_13.jpg');
+  }
+
+  &.quilotoa{
+    @include header-bg('../../img/thumb/quilotoa.jpg');
+  }
+
+  &.reykjavik {
+    @include header-bg('../../img/thumb/reykjavik.JPG');
+  }
+
+  &.rome{
+    @include header-bg('../../img/rome/rome_6.jpg');
+  }
+
+  &.slovenia{
+    @include header-bg('../../img/thumb/slovenia.jpg');
+  }
+
+  &.southafrica{
+    @include header-bg('../../img/southafrica/hero.jpg');
+  }
+
+  &.squamish{
+    @include header-bg('../../img/thumb/squamish.jpg');
+
+    .anchor {opacity: .5;}
+  }
+
+  &.thailand{
+    @include header-bg('../../img/thumb/thailand.jpg');
+
+    .anchor {opacity: .5;}
+  }
+
+  &.tofo{
+    @include header-bg('../../img/thumb/tofo.jpg');
+
+    .anchor {opacity: .5;}
+  }
+
+  .quote, .intro, + .quote {
+    max-width: 80%;
+    margin: auto;
+    position: relative;
+  }
+
+  .quote {
+    align-self: center;
+    color: $body-text;
+  }
+
+  .intro {
+    h3 {line-height: 0;}
+    h5 {
+      font-size: 22px;
+      margin-top: -7%;
+    }
+  }
+
+  + .quote {
+    margin-bottom: 20%;
+    width: 1000px;
+
+    @media (max-width: $screen-sm) {
+      margin-bottom: 35%;
+    }
+
+    p {
+      font-size: 1.9em;
+
+      @media (max-width:$screen-sm) {
+        font-size: 1.3em;
+        margin: auto;
+        max-width: 80%;
+      }
+    }
+
+    &:before {
+      background: url('../../img/quotation.svg') no-repeat;
+      background-size: contain;
+      content: ' ';
+      display: block;
+      max-width: 200px;
+      width: 20em;
+      height:  20em;
+      opacity: .05;
+      position: absolute;
+      margin: auto;
+      left: 0;
+      right: 0;
+      top: -20%;
+
+      @media (max-width: $screen-sm) {
+        top: 0;
+      }
+    }
+  }
+
+  //anchor image style
+  .anchor {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    opacity:.35;
+    @include transition-opacity();
+
+    &:hover, &.hover {
+      opacity:.65;
+    }
+  }
+}

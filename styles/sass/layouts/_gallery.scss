@@ -1,0 +1,27 @@
+.gallery {
+  display: flex;
+  flex-direction: column;
+
+  .photo {
+    max-width:1000px;
+    margin:0 auto 8%;
+
+    @media (max-width: $screen-sm) {
+      margin: 0 auto 20%;
+    }
+
+    h2 {
+      margin-top:10px;
+      opacity: .2;
+      @include transition-opacity();
+
+      @media (max-width: $screen-sm) {
+        opacity: 1;
+      }
+    }
+
+    &:hover {
+      h2 {opacity: 1;}
+    }
+  }
+}

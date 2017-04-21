@@ -1,0 +1,35 @@
+.arrow {
+  position: absolute;
+  bottom: 10%;
+  right: 0;
+  left: 0;
+  margin: auto;
+  opacity: 1;
+
+  &.hover, &:hover {
+    opacity:1;
+  }
+}
+
+#photos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  a {
+    width: 50%;
+
+    @media (max-width:$screen-sm){
+      width: 100%;
+    }
+  }
+}
+
+.thumb {
+  margin: .5%;
+  position:relative;
+
+  @media (max-width: $screen-sm) {
+    margin: .5% 0;
+  }
+}

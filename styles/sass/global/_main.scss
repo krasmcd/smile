@@ -1,0 +1,31 @@
+body {
+  background: $bg;
+  box-sizing: border-box;
+  color: $body-text;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  display: block;
+  font-size: .9em;
+  margin: 0 auto;
+  padding: 20px 0 20px 0;
+  text-align: center;
+}
+
+@-moz-document url-prefix() {
+  .gallery .photo {
+    margin: 0 auto 180px;
+
+    @media (max-width: $screen-sm) {
+      margin: 0 auto 90px;
+    }
+  }
+}

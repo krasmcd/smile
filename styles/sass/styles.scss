@@ -1,0 +1,15 @@
+//global styles
+@import './global/_colors';
+@import './global/_mixins';
+@import './global/_vars';
+@import './global/_typography';
+@import './global/_main';
+
+//layout styles
+@import './layouts/_gallery';
+@import './layouts/_headers';
+@import './layouts/_nav-wrapper';
+@import './layouts/_overlay';
+
+//page styles
+@import './pages/_home';
