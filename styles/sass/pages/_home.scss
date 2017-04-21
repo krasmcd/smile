@@ -32,4 +32,8 @@
   @media (max-width: $screen-sm) {
     margin: .5% 0;
   }
+
+  &:hover .overlay {
+    opacity:1;
+  }
 }

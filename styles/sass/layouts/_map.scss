@@ -1,0 +1,19 @@
+#map {
+  height: 70vh;
+  margin-bottom: 16%;
+  width: 100%;
+}
+
+//hide logo & Google Maps UI elements
+a[href^="http://maps.google.com/maps"]{display:none !important}
+a[href^="https://maps.google.com/maps"]{display:none !important}
+
+.gmnoprint a, .gmnoprint span, .gm-style-cc {
+    display:none;
+}
+
+/*
+.gmnoprint div {
+    background:none !important;
+}
+*/
