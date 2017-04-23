@@ -14,24 +14,51 @@
       max-width:300px;
       margin:15px;
       height:auto;
-      position:relative;
-      @media (max-width:$screen-sm){
-        margin:2px 0;
-        max-width: none;
-        width:100%;
-      }
+      position:relative;;
 
       .overlay {
+        @include transition();
         opacity:1;
 
         .title {
+          @include transition();
           font-size:2em;
           top:38%;
         }
       }
 
-      &:hover .title {
-        text-decoration:underline;
+      &:hover {
+        .overlay {
+          background:rgba(0,0,0,.75);
+        }
+      }
+
+      @media (max-width:$screen-sm){
+        margin: 1px 0;
+        max-width: none;
+        width: 100%;
+
+        .overlay .title {
+          font-size: 3em;
+        }
+
+        img {
+          width: 100vw;
+        }
+      }
+    }
+
+    @each $place, $color in $places {
+      a[href*="#{$place}"]:hover .overlay .title {
+        color: $color;
+      }
+    }
+
+    @media (max-width: $screen-sm) {
+      @each $place, $color in $places {
+        a[href*="#{$place}"] .overlay .title {
+          color: $color;
+        }
       }
     }
   }

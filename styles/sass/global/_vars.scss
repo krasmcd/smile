@@ -1,1 +1,24 @@
 $screen-sm:640px;
+
+$places: (
+  argentina: #B7E3E4,
+  australia: #EFFAB4,
+  budapest: #FAE397,
+  cambodia: lighten(#cc9849,8%),
+  croatia: #BEF6E9,
+  galapagos: #FEDCCC,
+  istanbul: lighten(#32B67A,12%),
+  london: #FF9966,
+  nepal: #fdedb2,
+  newzealand: #C0C2CE,
+  norway: #EFFFCD,
+  peru: #fdedb2,
+  quilotoa: #F1C3B8,
+  reykjavik: #fdedb2,
+  rome: #77EEDF,
+  slovenia: #75FFC0,
+  southafrica: #FFFDE7,
+  squamish: #f2cb6c,
+  thailand: #FDF06F,
+  tofo: #FF8FA4
+);

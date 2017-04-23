@@ -4,6 +4,12 @@
   transition: opacity .25s ease;
 }
 
+@mixin transition($time: .3s) {
+  -webkit-transition: all $time ease;
+  -moz-transition: all $time ease;
+  transition: all $time ease;
+}
+
 @mixin fade() {
   position: relative;
 
