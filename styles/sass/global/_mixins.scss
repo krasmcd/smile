@@ -39,15 +39,27 @@
 
 @mixin overlay-hover() {
   @each $place, $color in $places {
-    a[href*="#{$place}"]:hover .overlay .title {
-      color: $color;
+    a[href*="#{$place}"]:hover {
+      .overlay {
+        background-color: transparentize(darken($color, 60%), .7);
+
+        .title {
+          color: $color;
+        }
+      }
     }
   }
 
   @media (max-width: $screen-sm) {
     @each $place, $color in $places {
-      a[href*="#{$place}"] .overlay .title {
-        color: $color;
+      a[href*="#{$place}"] {
+        .overlay {
+          background-color: transparentize(darken($color, 60%), .7);
+
+          .title {
+            color: $color;
+          }
+        }
       }
     }
   }
