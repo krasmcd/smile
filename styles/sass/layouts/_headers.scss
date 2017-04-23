@@ -56,7 +56,7 @@ header {
   }
 
   &.newzealand{
-    @include header-bg('../../img/thumb/newzealand.jpg');
+    @include header-bg('../../img/thumb/newzealand.jpg', 9vw);
   }
 
   &.norway {
@@ -104,6 +104,12 @@ header {
     @include header-bg('../../img/thumb/tofo.jpg');
 
     .anchor {opacity: .5;}
+  }
+
+  @each $place, $color in $places {
+    &.#{$place} {
+      color: $color;
+    }
   }
 
   .quote, .intro, + .quote {
