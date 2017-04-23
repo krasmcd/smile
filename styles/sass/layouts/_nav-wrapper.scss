@@ -48,18 +48,6 @@
       }
     }
 
-    @each $place, $color in $places {
-      a[href*="#{$place}"]:hover .overlay .title {
-        color: $color;
-      }
-    }
-
-    @media (max-width: $screen-sm) {
-      @each $place, $color in $places {
-        a[href*="#{$place}"] .overlay .title {
-          color: $color;
-        }
-      }
-    }
+    @include overlay-hover();
   }
 }

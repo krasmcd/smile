@@ -23,6 +23,8 @@
       width: 100%;
     }
   }
+
+  @include overlay-hover();
 }
 
 .thumb {
