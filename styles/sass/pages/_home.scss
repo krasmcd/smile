@@ -1,6 +1,4 @@
 header.home {
-  filter: grayscale(100%);
-
   h1 {
     max-width: 1176px;
   }
@@ -17,6 +15,17 @@ header.home {
   .quote {
     margin: auto auto auto 10%;
     text-align: left;
+  }
+
+  .anchor {
+    left: 10%;
+    right: auto;
+
+    img {
+      $size: 80px;
+      height: $size;
+      width: $size;
+    }
   }
 }
 
