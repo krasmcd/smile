@@ -8,24 +8,15 @@ header.home {
   h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 2em;
+
+    @media (max-width: $screen-sm) {
+      font-size: 1em;
+    }
   }
 
   .quote {
     margin: auto auto auto 10%;
     text-align: left;
-  }
-
-  .anchor {
-    left: 10%;
-    top: 10%;
-    right: auto;
-    opacity: 1;
-
-    img {
-      $size: 80px;
-      height: $size;
-      width: $size;
-    }
   }
 }
 

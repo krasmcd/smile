@@ -4,6 +4,10 @@ body, h2, h5 {
 
 h1 {
   font-size: 5.2em;
+
+  @media (max-width: $screen-sm) {
+    font-size: 1.8em;
+  }
 }
 
 h2, footer {

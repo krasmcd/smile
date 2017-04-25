@@ -3,6 +3,9 @@ body, h2, h5 {
 
 h1 {
   font-size: 5.2em; }
+  @media (max-width: 640px) {
+    h1 {
+      font-size: 1.8em; } }
 
 h2, footer {
   color: rgba(255, 255, 255, 0.7);
@@ -651,8 +654,6 @@ header {
     header .anchor img {
       height: 50px;
       width: 50px; }
-    header .anchor:hover, header .anchor.hover {
-      opacity: .65; }
 
 #map {
   height: 70vh;
@@ -923,17 +924,12 @@ header.home {
   header.home h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 2em; }
+    @media (max-width: 640px) {
+      header.home h2 {
+        font-size: 1em; } }
   header.home .quote {
     margin: auto auto auto 10%;
     text-align: left; }
-  header.home .anchor {
-    left: 10%;
-    top: 10%;
-    right: auto;
-    opacity: 1; }
-    header.home .anchor img {
-      height: 80px;
-      width: 80px; }
 
 .arrow {
   position: absolute;
