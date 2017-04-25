@@ -1,10 +1,15 @@
 body {
   background: $bg;
+  border: 20px solid #FFF;
   box-sizing: border-box;
   color: $body-text;
   margin: 0;
   padding: 0;
   text-align: center;
+
+  @media (max-width: $screen-sm) {
+    border: 10px solid #FFF;
+  }
 }
 
 img {
@@ -13,10 +18,12 @@ img {
 }
 
 footer {
+  background: #FFF;
+  color: lighten($bg, 50%);
   display: block;
   font-size: .9em;
   margin: 0 auto;
-  padding: 20px 0 20px 0;
+  padding: 40px 0 20px;
   text-align: center;
 }
 

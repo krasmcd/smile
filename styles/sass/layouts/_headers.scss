@@ -1,7 +1,6 @@
 header {
   display:flex;
   flex-direction: column;
-  position:relative;
   width: 100%;
   height: 100%;
 
@@ -118,11 +117,6 @@ header {
     position: relative;
   }
 
-  .quote {
-    align-self: center;
-    color: $body-text;
-  }
-
   .intro {
     h3 {line-height: 0;}
     h5 {
@@ -173,12 +167,16 @@ header {
   //anchor image style
   .anchor {
     position: absolute;
-    top: 30px;
-    left: 0;
-    right: 0;
+    top: 50px;
+    left: 0px;
+    right: 0px;
     margin: auto;
-    opacity:.35;
-    @include transition-opacity();
+
+    img {
+      $size: 50px;
+      height: $size;
+      width: $size;
+    }
 
     &:hover, &.hover {
       opacity:.65;
