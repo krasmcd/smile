@@ -41,7 +41,7 @@
   @each $place, $color in $places {
     a[href*="#{$place}"]:hover {
       .overlay {
-        background-color: transparentize(darken($color, 60%), .7);
+        background-color: transparentize(darken($color, 56%), .5);
 
         .title {
           color: $color;
@@ -54,7 +54,7 @@
     @each $place, $color in $places {
       a[href*="#{$place}"] {
         .overlay {
-          background-color: transparentize(darken($color, 60%), .7);
+          background-color: transparentize(darken($color, 56%), .5);
 
           .title {
             color: $color;
