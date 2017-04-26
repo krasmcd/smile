@@ -581,7 +581,7 @@ header {
   header.norway {
     color: #EFFFCD; }
   header.peru {
-    color: #fdedb2; }
+    color: #c0D860; }
   header.quilotoa {
     color: #F1C3B8; }
   header.reykjavik {
@@ -684,7 +684,7 @@ header {
   header.norway .anchor:hover .anchor-svg {
     fill: #EFFFCD; }
   header.peru .anchor:hover .anchor-svg {
-    fill: #fdedb2; }
+    fill: #c0D860; }
   header.quilotoa .anchor:hover .anchor-svg {
     fill: #F1C3B8; }
   header.reykjavik .anchor:hover .anchor-svg {
@@ -746,6 +746,7 @@ a[href^="https://maps.google.com/maps"] {
           -moz-transition: all 0.3s ease;
           transition: all 0.3s ease;
           font-size: 2em;
+          font-weight: 100;
           top: 38%; }
       .nav-wrapper .nav .item:hover .overlay {
         background: rgba(0, 0, 0, 0.75); }
@@ -781,7 +782,7 @@ a[href^="https://maps.google.com/maps"] {
     .nav-wrapper .nav a[href*="norway"]:hover .overlay .title {
       color: #EFFFCD; }
     .nav-wrapper .nav a[href*="peru"]:hover .overlay .title {
-      color: #fdedb2; }
+      color: #c0D860; }
     .nav-wrapper .nav a[href*="quilotoa"]:hover .overlay .title {
       color: #F1C3B8; }
     .nav-wrapper .nav a[href*="reykjavik"]:hover .overlay .title {
@@ -822,7 +823,7 @@ a[href^="https://maps.google.com/maps"] {
       .nav-wrapper .nav a[href*="norway"] .overlay .title {
         color: #EFFFCD; }
       .nav-wrapper .nav a[href*="peru"] .overlay .title {
-        color: #fdedb2; }
+        color: #c0D860; }
       .nav-wrapper .nav a[href*="quilotoa"] .overlay .title {
         color: #F1C3B8; }
       .nav-wrapper .nav a[href*="reykjavik"] .overlay .title {
@@ -951,7 +952,7 @@ header.home .anchor-svg {
   #photos a[href*="norway"]:hover .overlay .title {
     color: #EFFFCD; }
   #photos a[href*="peru"]:hover .overlay .title {
-    color: #fdedb2; }
+    color: #c0D860; }
   #photos a[href*="quilotoa"]:hover .overlay .title {
     color: #F1C3B8; }
   #photos a[href*="reykjavik"]:hover .overlay .title {
@@ -992,7 +993,7 @@ header.home .anchor-svg {
     #photos a[href*="norway"] .overlay .title {
       color: #EFFFCD; }
     #photos a[href*="peru"] .overlay .title {
-      color: #fdedb2; }
+      color: #c0D860; }
     #photos a[href*="quilotoa"] .overlay .title {
       color: #F1C3B8; }
     #photos a[href*="reykjavik"] .overlay .title {

@@ -22,8 +22,9 @@
 
         .title {
           @include transition();
-          font-size:2em;
-          top:38%;
+          font-size: 2em;
+          font-weight: 100;
+          top: 38%;
         }
       }
 
