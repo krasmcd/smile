@@ -40,12 +40,8 @@
 @mixin overlay-hover() {
   @each $place, $color in $places {
     a[href*="#{$place}"]:hover {
-      .overlay {
-        background-color: transparentize(darken($color, 56%), .5);
-
-        .title {
-          color: $color;
-        }
+      .overlay .title {
+        color: $color;
       }
     }
   }
@@ -53,12 +49,8 @@
   @media (max-width: $screen-sm) {
     @each $place, $color in $places {
       a[href*="#{$place}"] {
-        .overlay {
-          background-color: transparentize(darken($color, 56%), .5);
-
-          .title {
-            color: $color;
-          }
+        .overlay .title {
+          color: $color;
         }
       }
     }
