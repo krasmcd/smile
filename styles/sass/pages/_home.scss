@@ -20,11 +20,18 @@ header.home {
   .anchor {
     left: 10%;
     right: auto;
+  }
 
-    img {
-      $size: 80px;
-      height: $size;
-      width: $size;
+  .anchor-svg {
+    $size: 80px;
+    height: $size;
+    width: $size;
+
+    fill: map-get($places, thailand);
+
+    @media (max-width: $screen-sm) {
+      height: $size/2;
+      width: $size/2;
     }
   }
 }

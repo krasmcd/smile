@@ -2,7 +2,8 @@ body, h2, h5 {
   font-family: "Merriweather", "Open nns", nns-serif; }
 
 h1 {
-  font-size: 5.2em; }
+  font-size: 5.2em;
+  font-weight: 400; }
   @media (max-width: 1100px) {
     h1 {
       font-size: 3.6em; } }
@@ -92,7 +93,7 @@ header {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100%; }
+  height: calc(100vh - 20px); }
   header.home {
     background: url("../../img/home_bg.jpg") no-repeat top center;
     background-size: cover;
@@ -199,8 +200,6 @@ header {
       top: 0;
       left: 0;
       background-blend-mode: multiply; }
-    header.budapest .anchor {
-      opacity: .5; }
   header.cambodia {
     background: url("../../img/thumb/cambodia.jpg") no-repeat top center;
     background-size: cover;
@@ -222,8 +221,6 @@ header {
       top: 0;
       left: 0;
       background-blend-mode: multiply; }
-    header.cambodia .anchor {
-      opacity: .5; }
   header.croatia {
     background: url("../../img/thumb/croatia.jpg") no-repeat top center;
     background-size: cover;
@@ -287,8 +284,6 @@ header {
       top: 0;
       left: 0;
       background-blend-mode: multiply; }
-    header.istanbul .anchor {
-      opacity: .4; }
   header.london {
     background: url("../../img/thumb/london.jpg") no-repeat top center;
     background-size: cover;
@@ -521,8 +516,6 @@ header {
       top: 0;
       left: 0;
       background-blend-mode: multiply; }
-    header.squamish .anchor {
-      opacity: .5; }
   header.thailand {
     background: url("../../img/thumb/thailand.jpg") no-repeat top center;
     background-size: cover;
@@ -544,8 +537,6 @@ header {
       top: 0;
       left: 0;
       background-blend-mode: multiply; }
-    header.thailand .anchor {
-      opacity: .5; }
   header.tofo {
     background: url("../../img/thumb/tofo.jpg") no-repeat top center;
     background-size: cover;
@@ -567,8 +558,6 @@ header {
       top: 0;
       left: 0;
       background-blend-mode: multiply; }
-    header.tofo .anchor {
-      opacity: .5; }
   header.argentina {
     color: #B7E3E4; }
   header.australia {
@@ -649,14 +638,69 @@ header {
         header + .quote:before {
           top: 0; } }
   header .anchor {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
     position: absolute;
-    top: 50px;
+    top: 60px;
     left: 0px;
     right: 0px;
     margin: auto; }
-    header .anchor img {
-      height: 50px;
-      width: 50px; }
+    header .anchor .anchor-svg {
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+      fill: #FFF;
+      height: 60px;
+      width: 60px; }
+    header .anchor:hover {
+      transform: rotate(15deg); }
+    @media (max-width: 640px) {
+      header .anchor {
+        top: 36px; }
+        header .anchor .anchor-svg {
+          height: 36px;
+          width: 36px; } }
+  header.argentina .anchor:hover .anchor-svg {
+    fill: #B7E3E4; }
+  header.australia .anchor:hover .anchor-svg {
+    fill: #EFFAB4; }
+  header.budapest .anchor:hover .anchor-svg {
+    fill: #FAE397; }
+  header.cambodia .anchor:hover .anchor-svg {
+    fill: #d5aa69; }
+  header.croatia .anchor:hover .anchor-svg {
+    fill: #BEF6E9; }
+  header.galapagos .anchor:hover .anchor-svg {
+    fill: #FEDCCC; }
+  header.istanbul .anchor:hover .anchor-svg {
+    fill: #55d098; }
+  header.london .anchor:hover .anchor-svg {
+    fill: #FF9966; }
+  header.nepal .anchor:hover .anchor-svg {
+    fill: #fdedb2; }
+  header.newzealand .anchor:hover .anchor-svg {
+    fill: #C0C2CE; }
+  header.norway .anchor:hover .anchor-svg {
+    fill: #EFFFCD; }
+  header.peru .anchor:hover .anchor-svg {
+    fill: #fdedb2; }
+  header.quilotoa .anchor:hover .anchor-svg {
+    fill: #F1C3B8; }
+  header.reykjavik .anchor:hover .anchor-svg {
+    fill: #fdedb2; }
+  header.rome .anchor:hover .anchor-svg {
+    fill: #77EEDF; }
+  header.slovenia .anchor:hover .anchor-svg {
+    fill: #75FFC0; }
+  header.southafrica .anchor:hover .anchor-svg {
+    fill: #FFFDE7; }
+  header.squamish .anchor:hover .anchor-svg {
+    fill: #f2cb6c; }
+  header.thailand .anchor:hover .anchor-svg {
+    fill: #FDF06F; }
+  header.tofo .anchor:hover .anchor-svg {
+    fill: #FF8FA4; }
 
 #map {
   height: 70vh;
@@ -714,170 +758,90 @@ a[href^="https://maps.google.com/maps"] {
             font-size: 3em; }
           .nav-wrapper .nav .item img {
             width: 100vw; } }
-    .nav-wrapper .nav a[href*="argentina"]:hover .overlay {
-      background-color: rgba(34, 90, 91, 0.5); }
-      .nav-wrapper .nav a[href*="argentina"]:hover .overlay .title {
-        color: #B7E3E4; }
-    .nav-wrapper .nav a[href*="australia"]:hover .overlay {
-      background-color: rgba(116, 135, 9, 0.5); }
-      .nav-wrapper .nav a[href*="australia"]:hover .overlay .title {
-        color: #EFFAB4; }
-    .nav-wrapper .nav a[href*="budapest"]:hover .overlay {
-      background-color: rgba(110, 86, 5, 0.5); }
-      .nav-wrapper .nav a[href*="budapest"]:hover .overlay .title {
-        color: #FAE397; }
-    .nav-wrapper .nav a[href*="cambodia"]:hover .overlay {
-      background-color: rgba(25, 18, 7, 0.5); }
-      .nav-wrapper .nav a[href*="cambodia"]:hover .overlay .title {
-        color: #d5aa69; }
-    .nav-wrapper .nav a[href*="croatia"]:hover .overlay {
-      background-color: rgba(18, 132, 106, 0.5); }
-      .nav-wrapper .nav a[href*="croatia"]:hover .overlay .title {
-        color: #BEF6E9; }
-    .nav-wrapper .nav a[href*="galapagos"]:hover .overlay {
-      background-color: rgba(169, 56, 3, 0.5); }
-      .nav-wrapper .nav a[href*="galapagos"]:hover .overlay .title {
-        color: #FEDCCC; }
-    .nav-wrapper .nav a[href*="istanbul"]:hover .overlay {
-      background-color: rgba(2, 6, 4, 0.5); }
-      .nav-wrapper .nav a[href*="istanbul"]:hover .overlay .title {
-        color: #55d098; }
-    .nav-wrapper .nav a[href*="london"]:hover .overlay {
-      background-color: rgba(71, 24, 0, 0.5); }
-      .nav-wrapper .nav a[href*="london"]:hover .overlay .title {
-        color: #FF9966; }
-    .nav-wrapper .nav a[href*="nepal"]:hover .overlay {
-      background-color: rgba(142, 112, 4, 0.5); }
-      .nav-wrapper .nav a[href*="nepal"]:hover .overlay .title {
-        color: #fdedb2; }
-    .nav-wrapper .nav a[href*="newzealand"]:hover .overlay {
-      background-color: rgba(49, 51, 63, 0.5); }
-      .nav-wrapper .nav a[href*="newzealand"]:hover .overlay .title {
-        color: #C0C2CE; }
-    .nav-wrapper .nav a[href*="norway"]:hover .overlay {
-      background-color: rgba(119, 174, 0, 0.5); }
-      .nav-wrapper .nav a[href*="norway"]:hover .overlay .title {
-        color: #EFFFCD; }
-    .nav-wrapper .nav a[href*="peru"]:hover .overlay {
-      background-color: rgba(142, 112, 4, 0.5); }
-      .nav-wrapper .nav a[href*="peru"]:hover .overlay .title {
-        color: #fdedb2; }
-    .nav-wrapper .nav a[href*="quilotoa"]:hover .overlay {
-      background-color: rgba(116, 41, 23, 0.5); }
-      .nav-wrapper .nav a[href*="quilotoa"]:hover .overlay .title {
-        color: #F1C3B8; }
-    .nav-wrapper .nav a[href*="reykjavik"]:hover .overlay {
-      background-color: rgba(142, 112, 4, 0.5); }
-      .nav-wrapper .nav a[href*="reykjavik"]:hover .overlay .title {
-        color: #fdedb2; }
-    .nav-wrapper .nav a[href*="rome"]:hover .overlay {
-      background-color: rgba(8, 63, 56, 0.5); }
-      .nav-wrapper .nav a[href*="rome"]:hover .overlay .title {
-        color: #77EEDF; }
-    .nav-wrapper .nav a[href*="slovenia"]:hover .overlay {
-      background-color: rgba(0, 86, 47, 0.5); }
-      .nav-wrapper .nav a[href*="slovenia"]:hover .overlay .title {
-        color: #75FFC0; }
-    .nav-wrapper .nav a[href*="southafrica"]:hover .overlay {
-      background-color: rgba(200, 184, 0, 0.5); }
-      .nav-wrapper .nav a[href*="southafrica"]:hover .overlay .title {
-        color: #FFFDE7; }
-    .nav-wrapper .nav a[href*="squamish"]:hover .overlay {
-      background-color: rgba(59, 43, 5, 0.5); }
-      .nav-wrapper .nav a[href*="squamish"]:hover .overlay .title {
-        color: #f2cb6c; }
-    .nav-wrapper .nav a[href*="thailand"]:hover .overlay {
-      background-color: rgba(77, 70, 1, 0.5); }
-      .nav-wrapper .nav a[href*="thailand"]:hover .overlay .title {
-        color: #FDF06F; }
-    .nav-wrapper .nav a[href*="tofo"]:hover .overlay {
-      background-color: rgba(112, 0, 21, 0.5); }
-      .nav-wrapper .nav a[href*="tofo"]:hover .overlay .title {
-        color: #FF8FA4; }
+    .nav-wrapper .nav a[href*="argentina"]:hover .overlay .title {
+      color: #B7E3E4; }
+    .nav-wrapper .nav a[href*="australia"]:hover .overlay .title {
+      color: #EFFAB4; }
+    .nav-wrapper .nav a[href*="budapest"]:hover .overlay .title {
+      color: #FAE397; }
+    .nav-wrapper .nav a[href*="cambodia"]:hover .overlay .title {
+      color: #d5aa69; }
+    .nav-wrapper .nav a[href*="croatia"]:hover .overlay .title {
+      color: #BEF6E9; }
+    .nav-wrapper .nav a[href*="galapagos"]:hover .overlay .title {
+      color: #FEDCCC; }
+    .nav-wrapper .nav a[href*="istanbul"]:hover .overlay .title {
+      color: #55d098; }
+    .nav-wrapper .nav a[href*="london"]:hover .overlay .title {
+      color: #FF9966; }
+    .nav-wrapper .nav a[href*="nepal"]:hover .overlay .title {
+      color: #fdedb2; }
+    .nav-wrapper .nav a[href*="newzealand"]:hover .overlay .title {
+      color: #C0C2CE; }
+    .nav-wrapper .nav a[href*="norway"]:hover .overlay .title {
+      color: #EFFFCD; }
+    .nav-wrapper .nav a[href*="peru"]:hover .overlay .title {
+      color: #fdedb2; }
+    .nav-wrapper .nav a[href*="quilotoa"]:hover .overlay .title {
+      color: #F1C3B8; }
+    .nav-wrapper .nav a[href*="reykjavik"]:hover .overlay .title {
+      color: #fdedb2; }
+    .nav-wrapper .nav a[href*="rome"]:hover .overlay .title {
+      color: #77EEDF; }
+    .nav-wrapper .nav a[href*="slovenia"]:hover .overlay .title {
+      color: #75FFC0; }
+    .nav-wrapper .nav a[href*="southafrica"]:hover .overlay .title {
+      color: #FFFDE7; }
+    .nav-wrapper .nav a[href*="squamish"]:hover .overlay .title {
+      color: #f2cb6c; }
+    .nav-wrapper .nav a[href*="thailand"]:hover .overlay .title {
+      color: #FDF06F; }
+    .nav-wrapper .nav a[href*="tofo"]:hover .overlay .title {
+      color: #FF8FA4; }
     @media (max-width: 640px) {
-      .nav-wrapper .nav a[href*="argentina"] .overlay {
-        background-color: rgba(34, 90, 91, 0.5); }
-        .nav-wrapper .nav a[href*="argentina"] .overlay .title {
-          color: #B7E3E4; }
-      .nav-wrapper .nav a[href*="australia"] .overlay {
-        background-color: rgba(116, 135, 9, 0.5); }
-        .nav-wrapper .nav a[href*="australia"] .overlay .title {
-          color: #EFFAB4; }
-      .nav-wrapper .nav a[href*="budapest"] .overlay {
-        background-color: rgba(110, 86, 5, 0.5); }
-        .nav-wrapper .nav a[href*="budapest"] .overlay .title {
-          color: #FAE397; }
-      .nav-wrapper .nav a[href*="cambodia"] .overlay {
-        background-color: rgba(25, 18, 7, 0.5); }
-        .nav-wrapper .nav a[href*="cambodia"] .overlay .title {
-          color: #d5aa69; }
-      .nav-wrapper .nav a[href*="croatia"] .overlay {
-        background-color: rgba(18, 132, 106, 0.5); }
-        .nav-wrapper .nav a[href*="croatia"] .overlay .title {
-          color: #BEF6E9; }
-      .nav-wrapper .nav a[href*="galapagos"] .overlay {
-        background-color: rgba(169, 56, 3, 0.5); }
-        .nav-wrapper .nav a[href*="galapagos"] .overlay .title {
-          color: #FEDCCC; }
-      .nav-wrapper .nav a[href*="istanbul"] .overlay {
-        background-color: rgba(2, 6, 4, 0.5); }
-        .nav-wrapper .nav a[href*="istanbul"] .overlay .title {
-          color: #55d098; }
-      .nav-wrapper .nav a[href*="london"] .overlay {
-        background-color: rgba(71, 24, 0, 0.5); }
-        .nav-wrapper .nav a[href*="london"] .overlay .title {
-          color: #FF9966; }
-      .nav-wrapper .nav a[href*="nepal"] .overlay {
-        background-color: rgba(142, 112, 4, 0.5); }
-        .nav-wrapper .nav a[href*="nepal"] .overlay .title {
-          color: #fdedb2; }
-      .nav-wrapper .nav a[href*="newzealand"] .overlay {
-        background-color: rgba(49, 51, 63, 0.5); }
-        .nav-wrapper .nav a[href*="newzealand"] .overlay .title {
-          color: #C0C2CE; }
-      .nav-wrapper .nav a[href*="norway"] .overlay {
-        background-color: rgba(119, 174, 0, 0.5); }
-        .nav-wrapper .nav a[href*="norway"] .overlay .title {
-          color: #EFFFCD; }
-      .nav-wrapper .nav a[href*="peru"] .overlay {
-        background-color: rgba(142, 112, 4, 0.5); }
-        .nav-wrapper .nav a[href*="peru"] .overlay .title {
-          color: #fdedb2; }
-      .nav-wrapper .nav a[href*="quilotoa"] .overlay {
-        background-color: rgba(116, 41, 23, 0.5); }
-        .nav-wrapper .nav a[href*="quilotoa"] .overlay .title {
-          color: #F1C3B8; }
-      .nav-wrapper .nav a[href*="reykjavik"] .overlay {
-        background-color: rgba(142, 112, 4, 0.5); }
-        .nav-wrapper .nav a[href*="reykjavik"] .overlay .title {
-          color: #fdedb2; }
-      .nav-wrapper .nav a[href*="rome"] .overlay {
-        background-color: rgba(8, 63, 56, 0.5); }
-        .nav-wrapper .nav a[href*="rome"] .overlay .title {
-          color: #77EEDF; }
-      .nav-wrapper .nav a[href*="slovenia"] .overlay {
-        background-color: rgba(0, 86, 47, 0.5); }
-        .nav-wrapper .nav a[href*="slovenia"] .overlay .title {
-          color: #75FFC0; }
-      .nav-wrapper .nav a[href*="southafrica"] .overlay {
-        background-color: rgba(200, 184, 0, 0.5); }
-        .nav-wrapper .nav a[href*="southafrica"] .overlay .title {
-          color: #FFFDE7; }
-      .nav-wrapper .nav a[href*="squamish"] .overlay {
-        background-color: rgba(59, 43, 5, 0.5); }
-        .nav-wrapper .nav a[href*="squamish"] .overlay .title {
-          color: #f2cb6c; }
-      .nav-wrapper .nav a[href*="thailand"] .overlay {
-        background-color: rgba(77, 70, 1, 0.5); }
-        .nav-wrapper .nav a[href*="thailand"] .overlay .title {
-          color: #FDF06F; }
-      .nav-wrapper .nav a[href*="tofo"] .overlay {
-        background-color: rgba(112, 0, 21, 0.5); }
-        .nav-wrapper .nav a[href*="tofo"] .overlay .title {
-          color: #FF8FA4; } }
+      .nav-wrapper .nav a[href*="argentina"] .overlay .title {
+        color: #B7E3E4; }
+      .nav-wrapper .nav a[href*="australia"] .overlay .title {
+        color: #EFFAB4; }
+      .nav-wrapper .nav a[href*="budapest"] .overlay .title {
+        color: #FAE397; }
+      .nav-wrapper .nav a[href*="cambodia"] .overlay .title {
+        color: #d5aa69; }
+      .nav-wrapper .nav a[href*="croatia"] .overlay .title {
+        color: #BEF6E9; }
+      .nav-wrapper .nav a[href*="galapagos"] .overlay .title {
+        color: #FEDCCC; }
+      .nav-wrapper .nav a[href*="istanbul"] .overlay .title {
+        color: #55d098; }
+      .nav-wrapper .nav a[href*="london"] .overlay .title {
+        color: #FF9966; }
+      .nav-wrapper .nav a[href*="nepal"] .overlay .title {
+        color: #fdedb2; }
+      .nav-wrapper .nav a[href*="newzealand"] .overlay .title {
+        color: #C0C2CE; }
+      .nav-wrapper .nav a[href*="norway"] .overlay .title {
+        color: #EFFFCD; }
+      .nav-wrapper .nav a[href*="peru"] .overlay .title {
+        color: #fdedb2; }
+      .nav-wrapper .nav a[href*="quilotoa"] .overlay .title {
+        color: #F1C3B8; }
+      .nav-wrapper .nav a[href*="reykjavik"] .overlay .title {
+        color: #fdedb2; }
+      .nav-wrapper .nav a[href*="rome"] .overlay .title {
+        color: #77EEDF; }
+      .nav-wrapper .nav a[href*="slovenia"] .overlay .title {
+        color: #75FFC0; }
+      .nav-wrapper .nav a[href*="southafrica"] .overlay .title {
+        color: #FFFDE7; }
+      .nav-wrapper .nav a[href*="squamish"] .overlay .title {
+        color: #f2cb6c; }
+      .nav-wrapper .nav a[href*="thailand"] .overlay .title {
+        color: #FDF06F; }
+      .nav-wrapper .nav a[href*="tofo"] .overlay .title {
+        color: #FF8FA4; } }
 
 .overlay {
-  background: rgba(0, 0, 0, 0.55);
+  background: rgba(0, 0, 0, 0.65);
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -934,9 +898,14 @@ header.home .quote {
 header.home .anchor {
   left: 10%;
   right: auto; }
-  header.home .anchor img {
-    height: 80px;
-    width: 80px; }
+header.home .anchor-svg {
+  height: 80px;
+  width: 80px;
+  fill: #FDF06F; }
+  @media (max-width: 640px) {
+    header.home .anchor-svg {
+      height: 40px;
+      width: 40px; } }
 
 .arrow {
   position: absolute;
@@ -959,167 +928,87 @@ header.home .anchor {
     @media (max-width: 640px) {
       #photos a {
         width: 100%; } }
-  #photos a[href*="argentina"]:hover .overlay {
-    background-color: rgba(34, 90, 91, 0.5); }
-    #photos a[href*="argentina"]:hover .overlay .title {
-      color: #B7E3E4; }
-  #photos a[href*="australia"]:hover .overlay {
-    background-color: rgba(116, 135, 9, 0.5); }
-    #photos a[href*="australia"]:hover .overlay .title {
-      color: #EFFAB4; }
-  #photos a[href*="budapest"]:hover .overlay {
-    background-color: rgba(110, 86, 5, 0.5); }
-    #photos a[href*="budapest"]:hover .overlay .title {
-      color: #FAE397; }
-  #photos a[href*="cambodia"]:hover .overlay {
-    background-color: rgba(25, 18, 7, 0.5); }
-    #photos a[href*="cambodia"]:hover .overlay .title {
-      color: #d5aa69; }
-  #photos a[href*="croatia"]:hover .overlay {
-    background-color: rgba(18, 132, 106, 0.5); }
-    #photos a[href*="croatia"]:hover .overlay .title {
-      color: #BEF6E9; }
-  #photos a[href*="galapagos"]:hover .overlay {
-    background-color: rgba(169, 56, 3, 0.5); }
-    #photos a[href*="galapagos"]:hover .overlay .title {
-      color: #FEDCCC; }
-  #photos a[href*="istanbul"]:hover .overlay {
-    background-color: rgba(2, 6, 4, 0.5); }
-    #photos a[href*="istanbul"]:hover .overlay .title {
-      color: #55d098; }
-  #photos a[href*="london"]:hover .overlay {
-    background-color: rgba(71, 24, 0, 0.5); }
-    #photos a[href*="london"]:hover .overlay .title {
-      color: #FF9966; }
-  #photos a[href*="nepal"]:hover .overlay {
-    background-color: rgba(142, 112, 4, 0.5); }
-    #photos a[href*="nepal"]:hover .overlay .title {
-      color: #fdedb2; }
-  #photos a[href*="newzealand"]:hover .overlay {
-    background-color: rgba(49, 51, 63, 0.5); }
-    #photos a[href*="newzealand"]:hover .overlay .title {
-      color: #C0C2CE; }
-  #photos a[href*="norway"]:hover .overlay {
-    background-color: rgba(119, 174, 0, 0.5); }
-    #photos a[href*="norway"]:hover .overlay .title {
-      color: #EFFFCD; }
-  #photos a[href*="peru"]:hover .overlay {
-    background-color: rgba(142, 112, 4, 0.5); }
-    #photos a[href*="peru"]:hover .overlay .title {
-      color: #fdedb2; }
-  #photos a[href*="quilotoa"]:hover .overlay {
-    background-color: rgba(116, 41, 23, 0.5); }
-    #photos a[href*="quilotoa"]:hover .overlay .title {
-      color: #F1C3B8; }
-  #photos a[href*="reykjavik"]:hover .overlay {
-    background-color: rgba(142, 112, 4, 0.5); }
-    #photos a[href*="reykjavik"]:hover .overlay .title {
-      color: #fdedb2; }
-  #photos a[href*="rome"]:hover .overlay {
-    background-color: rgba(8, 63, 56, 0.5); }
-    #photos a[href*="rome"]:hover .overlay .title {
-      color: #77EEDF; }
-  #photos a[href*="slovenia"]:hover .overlay {
-    background-color: rgba(0, 86, 47, 0.5); }
-    #photos a[href*="slovenia"]:hover .overlay .title {
-      color: #75FFC0; }
-  #photos a[href*="southafrica"]:hover .overlay {
-    background-color: rgba(200, 184, 0, 0.5); }
-    #photos a[href*="southafrica"]:hover .overlay .title {
-      color: #FFFDE7; }
-  #photos a[href*="squamish"]:hover .overlay {
-    background-color: rgba(59, 43, 5, 0.5); }
-    #photos a[href*="squamish"]:hover .overlay .title {
-      color: #f2cb6c; }
-  #photos a[href*="thailand"]:hover .overlay {
-    background-color: rgba(77, 70, 1, 0.5); }
-    #photos a[href*="thailand"]:hover .overlay .title {
-      color: #FDF06F; }
-  #photos a[href*="tofo"]:hover .overlay {
-    background-color: rgba(112, 0, 21, 0.5); }
-    #photos a[href*="tofo"]:hover .overlay .title {
-      color: #FF8FA4; }
+  #photos a[href*="argentina"]:hover .overlay .title {
+    color: #B7E3E4; }
+  #photos a[href*="australia"]:hover .overlay .title {
+    color: #EFFAB4; }
+  #photos a[href*="budapest"]:hover .overlay .title {
+    color: #FAE397; }
+  #photos a[href*="cambodia"]:hover .overlay .title {
+    color: #d5aa69; }
+  #photos a[href*="croatia"]:hover .overlay .title {
+    color: #BEF6E9; }
+  #photos a[href*="galapagos"]:hover .overlay .title {
+    color: #FEDCCC; }
+  #photos a[href*="istanbul"]:hover .overlay .title {
+    color: #55d098; }
+  #photos a[href*="london"]:hover .overlay .title {
+    color: #FF9966; }
+  #photos a[href*="nepal"]:hover .overlay .title {
+    color: #fdedb2; }
+  #photos a[href*="newzealand"]:hover .overlay .title {
+    color: #C0C2CE; }
+  #photos a[href*="norway"]:hover .overlay .title {
+    color: #EFFFCD; }
+  #photos a[href*="peru"]:hover .overlay .title {
+    color: #fdedb2; }
+  #photos a[href*="quilotoa"]:hover .overlay .title {
+    color: #F1C3B8; }
+  #photos a[href*="reykjavik"]:hover .overlay .title {
+    color: #fdedb2; }
+  #photos a[href*="rome"]:hover .overlay .title {
+    color: #77EEDF; }
+  #photos a[href*="slovenia"]:hover .overlay .title {
+    color: #75FFC0; }
+  #photos a[href*="southafrica"]:hover .overlay .title {
+    color: #FFFDE7; }
+  #photos a[href*="squamish"]:hover .overlay .title {
+    color: #f2cb6c; }
+  #photos a[href*="thailand"]:hover .overlay .title {
+    color: #FDF06F; }
+  #photos a[href*="tofo"]:hover .overlay .title {
+    color: #FF8FA4; }
   @media (max-width: 640px) {
-    #photos a[href*="argentina"] .overlay {
-      background-color: rgba(34, 90, 91, 0.5); }
-      #photos a[href*="argentina"] .overlay .title {
-        color: #B7E3E4; }
-    #photos a[href*="australia"] .overlay {
-      background-color: rgba(116, 135, 9, 0.5); }
-      #photos a[href*="australia"] .overlay .title {
-        color: #EFFAB4; }
-    #photos a[href*="budapest"] .overlay {
-      background-color: rgba(110, 86, 5, 0.5); }
-      #photos a[href*="budapest"] .overlay .title {
-        color: #FAE397; }
-    #photos a[href*="cambodia"] .overlay {
-      background-color: rgba(25, 18, 7, 0.5); }
-      #photos a[href*="cambodia"] .overlay .title {
-        color: #d5aa69; }
-    #photos a[href*="croatia"] .overlay {
-      background-color: rgba(18, 132, 106, 0.5); }
-      #photos a[href*="croatia"] .overlay .title {
-        color: #BEF6E9; }
-    #photos a[href*="galapagos"] .overlay {
-      background-color: rgba(169, 56, 3, 0.5); }
-      #photos a[href*="galapagos"] .overlay .title {
-        color: #FEDCCC; }
-    #photos a[href*="istanbul"] .overlay {
-      background-color: rgba(2, 6, 4, 0.5); }
-      #photos a[href*="istanbul"] .overlay .title {
-        color: #55d098; }
-    #photos a[href*="london"] .overlay {
-      background-color: rgba(71, 24, 0, 0.5); }
-      #photos a[href*="london"] .overlay .title {
-        color: #FF9966; }
-    #photos a[href*="nepal"] .overlay {
-      background-color: rgba(142, 112, 4, 0.5); }
-      #photos a[href*="nepal"] .overlay .title {
-        color: #fdedb2; }
-    #photos a[href*="newzealand"] .overlay {
-      background-color: rgba(49, 51, 63, 0.5); }
-      #photos a[href*="newzealand"] .overlay .title {
-        color: #C0C2CE; }
-    #photos a[href*="norway"] .overlay {
-      background-color: rgba(119, 174, 0, 0.5); }
-      #photos a[href*="norway"] .overlay .title {
-        color: #EFFFCD; }
-    #photos a[href*="peru"] .overlay {
-      background-color: rgba(142, 112, 4, 0.5); }
-      #photos a[href*="peru"] .overlay .title {
-        color: #fdedb2; }
-    #photos a[href*="quilotoa"] .overlay {
-      background-color: rgba(116, 41, 23, 0.5); }
-      #photos a[href*="quilotoa"] .overlay .title {
-        color: #F1C3B8; }
-    #photos a[href*="reykjavik"] .overlay {
-      background-color: rgba(142, 112, 4, 0.5); }
-      #photos a[href*="reykjavik"] .overlay .title {
-        color: #fdedb2; }
-    #photos a[href*="rome"] .overlay {
-      background-color: rgba(8, 63, 56, 0.5); }
-      #photos a[href*="rome"] .overlay .title {
-        color: #77EEDF; }
-    #photos a[href*="slovenia"] .overlay {
-      background-color: rgba(0, 86, 47, 0.5); }
-      #photos a[href*="slovenia"] .overlay .title {
-        color: #75FFC0; }
-    #photos a[href*="southafrica"] .overlay {
-      background-color: rgba(200, 184, 0, 0.5); }
-      #photos a[href*="southafrica"] .overlay .title {
-        color: #FFFDE7; }
-    #photos a[href*="squamish"] .overlay {
-      background-color: rgba(59, 43, 5, 0.5); }
-      #photos a[href*="squamish"] .overlay .title {
-        color: #f2cb6c; }
-    #photos a[href*="thailand"] .overlay {
-      background-color: rgba(77, 70, 1, 0.5); }
-      #photos a[href*="thailand"] .overlay .title {
-        color: #FDF06F; }
-    #photos a[href*="tofo"] .overlay {
-      background-color: rgba(112, 0, 21, 0.5); }
-      #photos a[href*="tofo"] .overlay .title {
-        color: #FF8FA4; } }
+    #photos a[href*="argentina"] .overlay .title {
+      color: #B7E3E4; }
+    #photos a[href*="australia"] .overlay .title {
+      color: #EFFAB4; }
+    #photos a[href*="budapest"] .overlay .title {
+      color: #FAE397; }
+    #photos a[href*="cambodia"] .overlay .title {
+      color: #d5aa69; }
+    #photos a[href*="croatia"] .overlay .title {
+      color: #BEF6E9; }
+    #photos a[href*="galapagos"] .overlay .title {
+      color: #FEDCCC; }
+    #photos a[href*="istanbul"] .overlay .title {
+      color: #55d098; }
+    #photos a[href*="london"] .overlay .title {
+      color: #FF9966; }
+    #photos a[href*="nepal"] .overlay .title {
+      color: #fdedb2; }
+    #photos a[href*="newzealand"] .overlay .title {
+      color: #C0C2CE; }
+    #photos a[href*="norway"] .overlay .title {
+      color: #EFFFCD; }
+    #photos a[href*="peru"] .overlay .title {
+      color: #fdedb2; }
+    #photos a[href*="quilotoa"] .overlay .title {
+      color: #F1C3B8; }
+    #photos a[href*="reykjavik"] .overlay .title {
+      color: #fdedb2; }
+    #photos a[href*="rome"] .overlay .title {
+      color: #77EEDF; }
+    #photos a[href*="slovenia"] .overlay .title {
+      color: #75FFC0; }
+    #photos a[href*="southafrica"] .overlay .title {
+      color: #FFFDE7; }
+    #photos a[href*="squamish"] .overlay .title {
+      color: #f2cb6c; }
+    #photos a[href*="thailand"] .overlay .title {
+      color: #FDF06F; }
+    #photos a[href*="tofo"] .overlay .title {
+      color: #FF8FA4; } }
 
 .thumb {
   margin: 1px 2px 0;

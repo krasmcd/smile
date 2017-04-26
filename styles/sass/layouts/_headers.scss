@@ -2,7 +2,7 @@ header {
   display:flex;
   flex-direction: column;
   width: 100%;
-  height: 100%;
+  height: calc(100vh - 20px);
 
   &.home {
     @include header-bg('../../img/home_bg.jpg', 1em);
@@ -22,14 +22,10 @@ header {
 
   &.budapest {
     @include header-bg('../../img/budapest/budapest_1.jpg');
-
-    .anchor {opacity: .5;}
   }
 
   &.cambodia {
     @include header-bg('../../img/thumb/cambodia.jpg');
-
-    .anchor {opacity: .5;}
   }
 
   &.croatia {
@@ -42,8 +38,6 @@ header {
 
   &.istanbul {
     @include header-bg('../../img/thumb/istanbul.jpg');
-
-    .anchor {opacity: .4;}
   }
 
   &.london{
@@ -89,20 +83,14 @@ header {
 
   &.squamish{
     @include header-bg('../../img/thumb/squamish.jpg');
-
-    .anchor {opacity: .5;}
   }
 
   &.thailand{
     @include header-bg('../../img/thumb/thailand.jpg');
-
-    .anchor {opacity: .5;}
   }
 
   &.tofo{
     @include header-bg('../../img/thumb/tofo.jpg');
-
-    .anchor {opacity: .5;}
   }
 
   @each $place, $color in $places {
@@ -166,16 +154,41 @@ header {
 
   //anchor image style
   .anchor {
+    @include transition();
+    $size: 60px;
     position: absolute;
-    top: 50px;
+    top: $size;
     left: 0px;
     right: 0px;
     margin: auto;
 
-    img {
-      $size: 50px;
+    .anchor-svg {
+      @include transition();
+      fill: #FFF;
       height: $size;
       width: $size;
+    }
+
+    &:hover {
+      //height: $size*1.04;
+      //width: $size*1.04;
+      transform: rotate(15deg);
+    }
+
+    @media (max-width: $screen-sm) {
+      top: $size*.6;
+
+      .anchor-svg {
+        height: $size*.6;
+        width: $size*.6;
+      }
+    }
+  }
+
+  //change the anchor's fill color on hover
+  @each $place, $color in $places {
+    &.#{$place} .anchor:hover .anchor-svg{
+      fill: $color;
     }
   }
 }
