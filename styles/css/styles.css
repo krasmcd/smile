@@ -541,7 +541,7 @@ header {
     background: url("../../img/thumb/tofo.jpg") no-repeat top center;
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
-    font-size: 10vw;
+    font-size: 9vw;
     position: relative; }
     header.tofo:before {
       content: ' ';
@@ -575,7 +575,7 @@ header {
   header.london {
     color: #FF9966; }
   header.nepal {
-    color: #fdedb2; }
+    color: #f6a102; }
   header.newzealand {
     color: #C0C2CE; }
   header.norway {
@@ -678,7 +678,7 @@ header {
   header.london .anchor:hover .anchor-svg {
     fill: #FF9966; }
   header.nepal .anchor:hover .anchor-svg {
-    fill: #fdedb2; }
+    fill: #f6a102; }
   header.newzealand .anchor:hover .anchor-svg {
     fill: #C0C2CE; }
   header.norway .anchor:hover .anchor-svg {
@@ -776,7 +776,7 @@ a[href^="https://maps.google.com/maps"] {
     .nav-wrapper .nav a[href*="london"]:hover .overlay .title {
       color: #FF9966; }
     .nav-wrapper .nav a[href*="nepal"]:hover .overlay .title {
-      color: #fdedb2; }
+      color: #f6a102; }
     .nav-wrapper .nav a[href*="newzealand"]:hover .overlay .title {
       color: #C0C2CE; }
     .nav-wrapper .nav a[href*="norway"]:hover .overlay .title {
@@ -817,7 +817,7 @@ a[href^="https://maps.google.com/maps"] {
       .nav-wrapper .nav a[href*="london"] .overlay .title {
         color: #FF9966; }
       .nav-wrapper .nav a[href*="nepal"] .overlay .title {
-        color: #fdedb2; }
+        color: #f6a102; }
       .nav-wrapper .nav a[href*="newzealand"] .overlay .title {
         color: #C0C2CE; }
       .nav-wrapper .nav a[href*="norway"] .overlay .title {
@@ -946,7 +946,7 @@ header.home .anchor-svg {
   #photos a[href*="london"]:hover .overlay .title {
     color: #FF9966; }
   #photos a[href*="nepal"]:hover .overlay .title {
-    color: #fdedb2; }
+    color: #f6a102; }
   #photos a[href*="newzealand"]:hover .overlay .title {
     color: #C0C2CE; }
   #photos a[href*="norway"]:hover .overlay .title {
@@ -987,7 +987,7 @@ header.home .anchor-svg {
     #photos a[href*="london"] .overlay .title {
       color: #FF9966; }
     #photos a[href*="nepal"] .overlay .title {
-      color: #fdedb2; }
+      color: #f6a102; }
     #photos a[href*="newzealand"] .overlay .title {
       color: #C0C2CE; }
     #photos a[href*="norway"] .overlay .title {

@@ -90,7 +90,7 @@ header {
   }
 
   &.tofo{
-    @include header-bg('../../img/thumb/tofo.jpg');
+    @include header-bg('../../img/thumb/tofo.jpg', 9vw);
   }
 
   @each $place, $color in $places {
