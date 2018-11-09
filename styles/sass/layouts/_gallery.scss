@@ -23,5 +23,11 @@
     &:hover {
       h2 {opacity: 1;}
     }
+
+    &.mobile-hide {
+      @media (max-width: $screen-sm) {
+        display: none;
+      }
+    }
   }
 }
