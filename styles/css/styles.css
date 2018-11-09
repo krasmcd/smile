@@ -47,7 +47,7 @@ body {
   text-align: center; }
   @media (max-width: 640px) {
     body {
-      border: 1.5vw solid #FFF; } }
+      border: 0; } }
 
 img {
   max-width: 100%;
