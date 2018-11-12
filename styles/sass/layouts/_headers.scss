@@ -13,7 +13,7 @@ header {
   }
 
   &.argentina {
-    @include header-bg('../../img/argentina/argentina_28.jpg');
+    @include header-bg('../../img/thumb/argentina.jpg');
   }
 
   &.australia {
@@ -29,11 +29,11 @@ header {
   }
 
   &.croatia {
-    @include header-bg('../../img/thumb/croatia.jpg');
+    @include header-bg('../../img/croatia/croatia_2.jpg');
   }
 
   &.galapagos {
-    @include header-bg('../../img/galapagos/galapagos_6.jpg');
+    @include header-bg('../../img/thumb/galapagos.jpg');
   }
 
   &.istanbul {
@@ -73,6 +73,10 @@ header {
     @include header-bg('../../img/rome/rome_6.jpg');
   }
 
+  &.santiago{
+    @include header-bg('../../img/thumb/santiago.jpg');
+  }
+
   &.slovenia{
     @include header-bg('../../img/thumb/slovenia.jpg');
   }
@@ -91,6 +95,10 @@ header {
 
   &.tofo{
     @include header-bg('../../img/thumb/tofo.jpg', 9vw);
+  }
+
+  &.torresdelpaine{
+    @include header-bg('../../img/torresdelpaine/torresdelpaine_8.jpg', 8vw);
   }
 
   @each $place, $color in $places {
