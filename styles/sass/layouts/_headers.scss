@@ -54,7 +54,7 @@ header {
 
   &.norway {
     @include header-bg('../../img/norway/hero.jpg');
-    background:url('../../img/norway/hero.jpg') no-repeat 81% top;
+    background-position: top right;
   }
 
   &.peru {

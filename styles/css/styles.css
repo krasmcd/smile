@@ -39,7 +39,7 @@ p {
 
 body {
   background: #111;
-  border: 20px solid #FFF;
+  border: 2vw solid #FFF;
   box-sizing: border-box;
   color: #FFF;
   margin: 0;
@@ -100,7 +100,7 @@ header {
   width: 100%;
   height: calc(100vh - 20px); }
   header.home {
-    background: url("../../img/home_bg.jpg") no-repeat top center;
+    background: url("../../img/home_bg.jpg") top center;
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
     font-size: 1em;
@@ -122,7 +122,7 @@ header {
       background-blend-mode: multiply; }
     @media (max-width: 768px) {
       header.home {
-        background: url("../../img/home_bg_color-SM.jpg") no-repeat top center;
+        background: url("../../img/home_bg_color-SM.jpg") top center;
         background-size: cover;
         font-family: 'Montserrat', sans-serif;
         font-size: 1.1em;
@@ -143,7 +143,7 @@ header {
           left: 0;
           background-blend-mode: multiply; } }
   header.argentina {
-    background: url("../../img/thumb/argentina.jpg") no-repeat top center;
+    background: url("../../img/thumb/argentina.jpg") top center;
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
     font-size: 10vw;
@@ -164,7 +164,7 @@ header {
       left: 0;
       background-blend-mode: multiply; }
   header.australia {
-    background: url("../../img/thumb/australia.jpg") no-repeat top center;
+    background: url("../../img/thumb/australia.jpg") top center;
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
     font-size: 10vw;
@@ -185,7 +185,7 @@ header {
       left: 0;
       background-blend-mode: multiply; }
   header.budapest {
-    background: url("../../img/budapest/budapest_1.jpg") no-repeat top center;
+    background: url("../../img/budapest/budapest_1.jpg") top center;
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
     font-size: 10vw;
@@ -206,7 +206,7 @@ header {
       left: 0;
       background-blend-mode: multiply; }
   header.cambodia {
-    background: url("../../img/thumb/cambodia.jpg") no-repeat top center;
+    background: url("../../img/thumb/cambodia.jpg") top center;
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
     font-size: 10vw;
@@ -227,7 +227,7 @@ header {
       left: 0;
       background-blend-mode: multiply; }
   header.croatia {
-    background: url("../../img/croatia/croatia_2.jpg") no-repeat top center;
+    background: url("../../img/croatia/croatia_2.jpg") top center;
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
     font-size: 10vw;
@@ -248,7 +248,7 @@ header {
       left: 0;
       background-blend-mode: multiply; }
   header.galapagos {
-    background: url("../../img/thumb/galapagos.jpg") no-repeat top center;
+    background: url("../../img/thumb/galapagos.jpg") top center;
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
     font-size: 10vw;
@@ -269,7 +269,7 @@ header {
       left: 0;
       background-blend-mode: multiply; }
   header.istanbul {
-    background: url("../../img/thumb/istanbul.jpg") no-repeat top center;
+    background: url("../../img/thumb/istanbul.jpg") top center;
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
     font-size: 10vw;
@@ -290,7 +290,7 @@ header {
       left: 0;
       background-blend-mode: multiply; }
   header.london {
-    background: url("../../img/thumb/london.jpg") no-repeat top center;
+    background: url("../../img/thumb/london.jpg") top center;
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
     font-size: 10vw;
@@ -311,7 +311,7 @@ header {
       left: 0;
       background-blend-mode: multiply; }
   header.nepal {
-    background: url("../../img/nepal/nepal_7.jpg") no-repeat top center;
+    background: url("../../img/nepal/nepal_7.jpg") top center;
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
     font-size: 10vw;
@@ -332,7 +332,7 @@ header {
       left: 0;
       background-blend-mode: multiply; }
   header.newzealand {
-    background: url("../../img/thumb/newzealand.jpg") no-repeat top center;
+    background: url("../../img/thumb/newzealand.jpg") top center;
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
     font-size: 9vw;
@@ -353,12 +353,12 @@ header {
       left: 0;
       background-blend-mode: multiply; }
   header.norway {
-    background: url("../../img/norway/hero.jpg") no-repeat top center;
+    background: url("../../img/norway/hero.jpg") top center;
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
     font-size: 10vw;
     position: relative;
-    background: url("../../img/norway/hero.jpg") no-repeat 81% top; }
+    background-position: top right; }
     header.norway:before {
       content: ' ';
       display: block;
@@ -375,7 +375,7 @@ header {
       left: 0;
       background-blend-mode: multiply; }
   header.peru {
-    background: url("../../img/peru/peru_13.jpg") no-repeat top center;
+    background: url("../../img/peru/peru_13.jpg") top center;
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
     font-size: 10vw;
@@ -396,7 +396,7 @@ header {
       left: 0;
       background-blend-mode: multiply; }
   header.quilotoa {
-    background: url("../../img/thumb/quilotoa.jpg") no-repeat top center;
+    background: url("../../img/thumb/quilotoa.jpg") top center;
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
     font-size: 10vw;
@@ -417,7 +417,7 @@ header {
       left: 0;
       background-blend-mode: multiply; }
   header.reykjavik {
-    background: url("../../img/thumb/reykjavik.JPG") no-repeat top center;
+    background: url("../../img/thumb/reykjavik.JPG") top center;
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
     font-size: 10vw;
@@ -438,7 +438,7 @@ header {
       left: 0;
       background-blend-mode: multiply; }
   header.rome {
-    background: url("../../img/rome/rome_6.jpg") no-repeat top center;
+    background: url("../../img/rome/rome_6.jpg") top center;
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
     font-size: 10vw;
@@ -459,7 +459,7 @@ header {
       left: 0;
       background-blend-mode: multiply; }
   header.santiago {
-    background: url("../../img/thumb/santiago.jpg") no-repeat top center;
+    background: url("../../img/thumb/santiago.jpg") top center;
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
     font-size: 10vw;
@@ -480,7 +480,7 @@ header {
       left: 0;
       background-blend-mode: multiply; }
   header.slovenia {
-    background: url("../../img/thumb/slovenia.jpg") no-repeat top center;
+    background: url("../../img/thumb/slovenia.jpg") top center;
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
     font-size: 10vw;
@@ -501,7 +501,7 @@ header {
       left: 0;
       background-blend-mode: multiply; }
   header.southafrica {
-    background: url("../../img/southafrica/hero.jpg") no-repeat top center;
+    background: url("../../img/southafrica/hero.jpg") top center;
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
     font-size: 10vw;
@@ -522,7 +522,7 @@ header {
       left: 0;
       background-blend-mode: multiply; }
   header.squamish {
-    background: url("../../img/thumb/squamish.jpg") no-repeat top center;
+    background: url("../../img/thumb/squamish.jpg") top center;
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
     font-size: 10vw;
@@ -543,7 +543,7 @@ header {
       left: 0;
       background-blend-mode: multiply; }
   header.thailand {
-    background: url("../../img/thumb/thailand.jpg") no-repeat top center;
+    background: url("../../img/thumb/thailand.jpg") top center;
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
     font-size: 10vw;
@@ -564,7 +564,7 @@ header {
       left: 0;
       background-blend-mode: multiply; }
   header.tofo {
-    background: url("../../img/thumb/tofo.jpg") no-repeat top center;
+    background: url("../../img/thumb/tofo.jpg") top center;
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
     font-size: 9vw;
@@ -585,7 +585,7 @@ header {
       left: 0;
       background-blend-mode: multiply; }
   header.torresdelpaine {
-    background: url("../../img/torresdelpaine/torresdelpaine_8.jpg") no-repeat top center;
+    background: url("../../img/torresdelpaine/torresdelpaine_8.jpg") top center;
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
     font-size: 8vw;
@@ -781,6 +781,9 @@ a[href^="https://maps.google.com/maps"] {
   display: block;
   padding: 30px 0;
   width: 100%; }
+  @media (max-width: 768px) {
+    .nav-wrapper a {
+      display: block; } }
   .nav-wrapper .nav {
     max-width: 1000px;
     margin: 0 auto; }
@@ -801,108 +804,62 @@ a[href^="https://maps.google.com/maps"] {
           -moz-transition: all 0.3s ease;
           transition: all 0.3s ease;
           font-size: 2em;
-          font-weight: 100;
           top: 38%; }
       .nav-wrapper .nav .item:hover .overlay {
         background: rgba(0, 0, 0, 0.75); }
       @media (max-width: 768px) {
         .nav-wrapper .nav .item {
-          margin: 1px 0;
+          margin: 0;
           max-width: none;
           width: 100%; }
           .nav-wrapper .nav .item .overlay .title {
             font-size: 3em; }
           .nav-wrapper .nav .item img {
             width: 100vw; } }
-    .nav-wrapper .nav a[href*="argentina"]:hover .overlay .title {
+    .nav-wrapper .nav a[href*="argentina"] .overlay .title {
       color: #B7E3E4; }
-    .nav-wrapper .nav a[href*="australia"]:hover .overlay .title {
+    .nav-wrapper .nav a[href*="australia"] .overlay .title {
       color: #EFFAB4; }
-    .nav-wrapper .nav a[href*="budapest"]:hover .overlay .title {
+    .nav-wrapper .nav a[href*="budapest"] .overlay .title {
       color: #FAE397; }
-    .nav-wrapper .nav a[href*="cambodia"]:hover .overlay .title {
+    .nav-wrapper .nav a[href*="cambodia"] .overlay .title {
       color: #d5aa69; }
-    .nav-wrapper .nav a[href*="croatia"]:hover .overlay .title {
+    .nav-wrapper .nav a[href*="croatia"] .overlay .title {
       color: #BEF6E9; }
-    .nav-wrapper .nav a[href*="galapagos"]:hover .overlay .title {
+    .nav-wrapper .nav a[href*="galapagos"] .overlay .title {
       color: #FEDCCC; }
-    .nav-wrapper .nav a[href*="istanbul"]:hover .overlay .title {
+    .nav-wrapper .nav a[href*="istanbul"] .overlay .title {
       color: #55d098; }
-    .nav-wrapper .nav a[href*="london"]:hover .overlay .title {
+    .nav-wrapper .nav a[href*="london"] .overlay .title {
       color: #FF9966; }
-    .nav-wrapper .nav a[href*="nepal"]:hover .overlay .title {
+    .nav-wrapper .nav a[href*="nepal"] .overlay .title {
       color: #f6a102; }
-    .nav-wrapper .nav a[href*="newzealand"]:hover .overlay .title {
+    .nav-wrapper .nav a[href*="newzealand"] .overlay .title {
       color: #C0C2CE; }
-    .nav-wrapper .nav a[href*="norway"]:hover .overlay .title {
+    .nav-wrapper .nav a[href*="norway"] .overlay .title {
       color: #EFFFCD; }
-    .nav-wrapper .nav a[href*="peru"]:hover .overlay .title {
+    .nav-wrapper .nav a[href*="peru"] .overlay .title {
       color: #c0D860; }
-    .nav-wrapper .nav a[href*="quilotoa"]:hover .overlay .title {
+    .nav-wrapper .nav a[href*="quilotoa"] .overlay .title {
       color: #F1C3B8; }
-    .nav-wrapper .nav a[href*="reykjavik"]:hover .overlay .title {
+    .nav-wrapper .nav a[href*="reykjavik"] .overlay .title {
       color: #fdedb2; }
-    .nav-wrapper .nav a[href*="rome"]:hover .overlay .title {
+    .nav-wrapper .nav a[href*="rome"] .overlay .title {
       color: #77EEDF; }
-    .nav-wrapper .nav a[href*="santiago"]:hover .overlay .title {
+    .nav-wrapper .nav a[href*="santiago"] .overlay .title {
       color: #f0e400; }
-    .nav-wrapper .nav a[href*="slovenia"]:hover .overlay .title {
+    .nav-wrapper .nav a[href*="slovenia"] .overlay .title {
       color: #75FFC0; }
-    .nav-wrapper .nav a[href*="southafrica"]:hover .overlay .title {
+    .nav-wrapper .nav a[href*="southafrica"] .overlay .title {
       color: #FFFDE7; }
-    .nav-wrapper .nav a[href*="squamish"]:hover .overlay .title {
+    .nav-wrapper .nav a[href*="squamish"] .overlay .title {
       color: #f2cb6c; }
-    .nav-wrapper .nav a[href*="thailand"]:hover .overlay .title {
+    .nav-wrapper .nav a[href*="thailand"] .overlay .title {
       color: #FDF06F; }
-    .nav-wrapper .nav a[href*="tofo"]:hover .overlay .title {
+    .nav-wrapper .nav a[href*="tofo"] .overlay .title {
       color: #FF8FA4; }
-    .nav-wrapper .nav a[href*="torresdelpaine"]:hover .overlay .title {
+    .nav-wrapper .nav a[href*="torresdelpaine"] .overlay .title {
       color: #BEA1A5; }
-    @media (max-width: 768px) {
-      .nav-wrapper .nav a[href*="argentina"] .overlay .title {
-        color: #B7E3E4; }
-      .nav-wrapper .nav a[href*="australia"] .overlay .title {
-        color: #EFFAB4; }
-      .nav-wrapper .nav a[href*="budapest"] .overlay .title {
-        color: #FAE397; }
-      .nav-wrapper .nav a[href*="cambodia"] .overlay .title {
-        color: #d5aa69; }
-      .nav-wrapper .nav a[href*="croatia"] .overlay .title {
-        color: #BEF6E9; }
-      .nav-wrapper .nav a[href*="galapagos"] .overlay .title {
-        color: #FEDCCC; }
-      .nav-wrapper .nav a[href*="istanbul"] .overlay .title {
-        color: #55d098; }
-      .nav-wrapper .nav a[href*="london"] .overlay .title {
-        color: #FF9966; }
-      .nav-wrapper .nav a[href*="nepal"] .overlay .title {
-        color: #f6a102; }
-      .nav-wrapper .nav a[href*="newzealand"] .overlay .title {
-        color: #C0C2CE; }
-      .nav-wrapper .nav a[href*="norway"] .overlay .title {
-        color: #EFFFCD; }
-      .nav-wrapper .nav a[href*="peru"] .overlay .title {
-        color: #c0D860; }
-      .nav-wrapper .nav a[href*="quilotoa"] .overlay .title {
-        color: #F1C3B8; }
-      .nav-wrapper .nav a[href*="reykjavik"] .overlay .title {
-        color: #fdedb2; }
-      .nav-wrapper .nav a[href*="rome"] .overlay .title {
-        color: #77EEDF; }
-      .nav-wrapper .nav a[href*="santiago"] .overlay .title {
-        color: #f0e400; }
-      .nav-wrapper .nav a[href*="slovenia"] .overlay .title {
-        color: #75FFC0; }
-      .nav-wrapper .nav a[href*="southafrica"] .overlay .title {
-        color: #FFFDE7; }
-      .nav-wrapper .nav a[href*="squamish"] .overlay .title {
-        color: #f2cb6c; }
-      .nav-wrapper .nav a[href*="thailand"] .overlay .title {
-        color: #FDF06F; }
-      .nav-wrapper .nav a[href*="tofo"] .overlay .title {
-        color: #FF8FA4; }
-      .nav-wrapper .nav a[href*="torresdelpaine"] .overlay .title {
-        color: #BEA1A5; } }
 
 .overlay {
   background: rgba(0, 0, 0, 0.65);
@@ -977,116 +934,73 @@ header.home .anchor-svg {
   right: 0;
   left: 0;
   margin: auto;
-  opacity: 1; }
+  opacity: 1;
+  width: 4vw; }
   .arrow.hover, .arrow:hover {
     opacity: 1; }
+  @media (max-width: 768px) {
+    .arrow {
+      width: 6vw; } }
 
 #photos {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between; }
   #photos a {
+    display: block;
     width: 50%; }
     #photos a:nth-of-type(odd) .thumb {
       margin-right: 0px; }
     @media (max-width: 768px) {
       #photos a {
         width: 100%; } }
-  #photos a[href*="argentina"]:hover .overlay .title {
+  #photos a[href*="argentina"] .overlay .title {
     color: #B7E3E4; }
-  #photos a[href*="australia"]:hover .overlay .title {
+  #photos a[href*="australia"] .overlay .title {
     color: #EFFAB4; }
-  #photos a[href*="budapest"]:hover .overlay .title {
+  #photos a[href*="budapest"] .overlay .title {
     color: #FAE397; }
-  #photos a[href*="cambodia"]:hover .overlay .title {
+  #photos a[href*="cambodia"] .overlay .title {
     color: #d5aa69; }
-  #photos a[href*="croatia"]:hover .overlay .title {
+  #photos a[href*="croatia"] .overlay .title {
     color: #BEF6E9; }
-  #photos a[href*="galapagos"]:hover .overlay .title {
+  #photos a[href*="galapagos"] .overlay .title {
     color: #FEDCCC; }
-  #photos a[href*="istanbul"]:hover .overlay .title {
+  #photos a[href*="istanbul"] .overlay .title {
     color: #55d098; }
-  #photos a[href*="london"]:hover .overlay .title {
+  #photos a[href*="london"] .overlay .title {
     color: #FF9966; }
-  #photos a[href*="nepal"]:hover .overlay .title {
+  #photos a[href*="nepal"] .overlay .title {
     color: #f6a102; }
-  #photos a[href*="newzealand"]:hover .overlay .title {
+  #photos a[href*="newzealand"] .overlay .title {
     color: #C0C2CE; }
-  #photos a[href*="norway"]:hover .overlay .title {
+  #photos a[href*="norway"] .overlay .title {
     color: #EFFFCD; }
-  #photos a[href*="peru"]:hover .overlay .title {
+  #photos a[href*="peru"] .overlay .title {
     color: #c0D860; }
-  #photos a[href*="quilotoa"]:hover .overlay .title {
+  #photos a[href*="quilotoa"] .overlay .title {
     color: #F1C3B8; }
-  #photos a[href*="reykjavik"]:hover .overlay .title {
+  #photos a[href*="reykjavik"] .overlay .title {
     color: #fdedb2; }
-  #photos a[href*="rome"]:hover .overlay .title {
+  #photos a[href*="rome"] .overlay .title {
     color: #77EEDF; }
-  #photos a[href*="santiago"]:hover .overlay .title {
+  #photos a[href*="santiago"] .overlay .title {
     color: #f0e400; }
-  #photos a[href*="slovenia"]:hover .overlay .title {
+  #photos a[href*="slovenia"] .overlay .title {
     color: #75FFC0; }
-  #photos a[href*="southafrica"]:hover .overlay .title {
+  #photos a[href*="southafrica"] .overlay .title {
     color: #FFFDE7; }
-  #photos a[href*="squamish"]:hover .overlay .title {
+  #photos a[href*="squamish"] .overlay .title {
     color: #f2cb6c; }
-  #photos a[href*="thailand"]:hover .overlay .title {
+  #photos a[href*="thailand"] .overlay .title {
     color: #FDF06F; }
-  #photos a[href*="tofo"]:hover .overlay .title {
+  #photos a[href*="tofo"] .overlay .title {
     color: #FF8FA4; }
-  #photos a[href*="torresdelpaine"]:hover .overlay .title {
+  #photos a[href*="torresdelpaine"] .overlay .title {
     color: #BEA1A5; }
-  @media (max-width: 768px) {
-    #photos a[href*="argentina"] .overlay .title {
-      color: #B7E3E4; }
-    #photos a[href*="australia"] .overlay .title {
-      color: #EFFAB4; }
-    #photos a[href*="budapest"] .overlay .title {
-      color: #FAE397; }
-    #photos a[href*="cambodia"] .overlay .title {
-      color: #d5aa69; }
-    #photos a[href*="croatia"] .overlay .title {
-      color: #BEF6E9; }
-    #photos a[href*="galapagos"] .overlay .title {
-      color: #FEDCCC; }
-    #photos a[href*="istanbul"] .overlay .title {
-      color: #55d098; }
-    #photos a[href*="london"] .overlay .title {
-      color: #FF9966; }
-    #photos a[href*="nepal"] .overlay .title {
-      color: #f6a102; }
-    #photos a[href*="newzealand"] .overlay .title {
-      color: #C0C2CE; }
-    #photos a[href*="norway"] .overlay .title {
-      color: #EFFFCD; }
-    #photos a[href*="peru"] .overlay .title {
-      color: #c0D860; }
-    #photos a[href*="quilotoa"] .overlay .title {
-      color: #F1C3B8; }
-    #photos a[href*="reykjavik"] .overlay .title {
-      color: #fdedb2; }
-    #photos a[href*="rome"] .overlay .title {
-      color: #77EEDF; }
-    #photos a[href*="santiago"] .overlay .title {
-      color: #f0e400; }
-    #photos a[href*="slovenia"] .overlay .title {
-      color: #75FFC0; }
-    #photos a[href*="southafrica"] .overlay .title {
-      color: #FFFDE7; }
-    #photos a[href*="squamish"] .overlay .title {
-      color: #f2cb6c; }
-    #photos a[href*="thailand"] .overlay .title {
-      color: #FDF06F; }
-    #photos a[href*="tofo"] .overlay .title {
-      color: #FF8FA4; }
-    #photos a[href*="torresdelpaine"] .overlay .title {
-      color: #BEA1A5; } }
 
 .thumb {
   position: relative; }
-  @media (max-width: 768px) {
-    .thumb {
-      margin: .5% 0; } }
   .thumb:hover .overlay {
     opacity: 1; }
 
