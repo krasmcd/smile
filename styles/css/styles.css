@@ -7,7 +7,7 @@ h1 {
   @media (max-width: 1100px) {
     h1 {
       font-size: 2.4em; } }
-  @media (max-width: 640px) {
+  @media (max-width: 768px) {
     h1 {
       font-size: 1.8em; } }
 
@@ -15,11 +15,11 @@ h2, footer {
   color: rgba(255, 255, 255, 0.7);
   font-size: 1em;
   font-weight: 100; }
-  @media (max-width: 640px) {
+  @media (max-width: 768px) {
     h2, footer {
       font-size: 70%; } }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   h2 {
     margin: 5px 0 20px 0; } }
 
@@ -45,7 +45,7 @@ body {
   margin: 0;
   padding: 0;
   text-align: center; }
-  @media (max-width: 640px) {
+  @media (max-width: 768px) {
     body {
       border: 0; } }
 
@@ -65,7 +65,7 @@ footer {
 @-moz-document url-prefix() {
   .gallery .photo {
     margin: 0 auto 180px; }
-    @media (max-width: 640px) {
+    @media (max-width: 768px) {
       .gallery .photo {
         margin: 0 auto 90px; } } }
 .gallery {
@@ -74,7 +74,9 @@ footer {
   .gallery .photo {
     max-width: 1000px;
     margin: 0 auto 8%; }
-    @media (max-width: 640px) {
+    .gallery .photo img {
+      max-height: 92vh; }
+    @media (max-width: 768px) {
       .gallery .photo {
         margin: 0 auto 20%; } }
     .gallery .photo h2 {
@@ -83,12 +85,12 @@ footer {
       -webkit-transition: opacity .25s ease;
       -moz-transition: opacity .25s ease;
       transition: opacity .25s ease; }
-      @media (max-width: 640px) {
+      @media (max-width: 768px) {
         .gallery .photo h2 {
           opacity: 1; } }
     .gallery .photo:hover h2 {
       opacity: 1; }
-    @media (max-width: 640px) {
+    @media (max-width: 768px) {
       .gallery .photo.mobile-hide {
         display: none; } }
 
@@ -118,7 +120,7 @@ header {
       top: 0;
       left: 0;
       background-blend-mode: multiply; }
-    @media (max-width: 640px) {
+    @media (max-width: 768px) {
       header.home {
         background: url("../../img/home_bg_color-SM.jpg") no-repeat top center;
         background-size: cover;
@@ -141,7 +143,7 @@ header {
           left: 0;
           background-blend-mode: multiply; } }
   header.argentina {
-    background: url("../../img/argentina/argentina_28.jpg") no-repeat top center;
+    background: url("../../img/thumb/argentina.jpg") no-repeat top center;
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
     font-size: 10vw;
@@ -225,7 +227,7 @@ header {
       left: 0;
       background-blend-mode: multiply; }
   header.croatia {
-    background: url("../../img/thumb/croatia.jpg") no-repeat top center;
+    background: url("../../img/croatia/croatia_2.jpg") no-repeat top center;
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
     font-size: 10vw;
@@ -246,7 +248,7 @@ header {
       left: 0;
       background-blend-mode: multiply; }
   header.galapagos {
-    background: url("../../img/galapagos/galapagos_6.jpg") no-repeat top center;
+    background: url("../../img/thumb/galapagos.jpg") no-repeat top center;
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
     font-size: 10vw;
@@ -456,6 +458,27 @@ header {
       top: 0;
       left: 0;
       background-blend-mode: multiply; }
+  header.santiago {
+    background: url("../../img/thumb/santiago.jpg") no-repeat top center;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10vw;
+    position: relative; }
+    header.santiago:before {
+      content: ' ';
+      display: block;
+      background: -moz-linear-gradient(top, rgba(17, 17, 17, 0) 0%, #111111 100%);
+      /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, rgba(17, 17, 17, 0) 0%, #111111 100%);
+      /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, rgba(17, 17, 17, 0) 0%, #111111 100%);
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-blend-mode: multiply; }
   header.slovenia {
     background: url("../../img/thumb/slovenia.jpg") no-repeat top center;
     background-size: cover;
@@ -561,6 +584,27 @@ header {
       top: 0;
       left: 0;
       background-blend-mode: multiply; }
+  header.torresdelpaine {
+    background: url("../../img/torresdelpaine/torresdelpaine_8.jpg") no-repeat top center;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 8vw;
+    position: relative; }
+    header.torresdelpaine:before {
+      content: ' ';
+      display: block;
+      background: -moz-linear-gradient(top, rgba(17, 17, 17, 0) 0%, #111111 100%);
+      /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, rgba(17, 17, 17, 0) 0%, #111111 100%);
+      /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, rgba(17, 17, 17, 0) 0%, #111111 100%);
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-blend-mode: multiply; }
   header.argentina {
     color: #B7E3E4; }
   header.australia {
@@ -591,6 +635,8 @@ header {
     color: #fdedb2; }
   header.rome {
     color: #77EEDF; }
+  header.santiago {
+    color: #f0e400; }
   header.slovenia {
     color: #75FFC0; }
   header.southafrica {
@@ -601,6 +647,8 @@ header {
     color: #FDF06F; }
   header.tofo {
     color: #FF8FA4; }
+  header.torresdelpaine {
+    color: #BEA1A5; }
   header .quote, header .intro, header + .quote {
     max-width: 80%;
     margin: auto;
@@ -613,12 +661,12 @@ header {
   header + .quote {
     margin-bottom: 20%;
     width: 1000px; }
-    @media (max-width: 640px) {
+    @media (max-width: 768px) {
       header + .quote {
         margin-bottom: 35%; } }
     header + .quote p {
       font-size: 1.9em; }
-      @media (max-width: 640px) {
+      @media (max-width: 768px) {
         header + .quote p {
           font-size: 1.3em;
           margin: auto;
@@ -637,7 +685,7 @@ header {
       left: 0;
       right: 0;
       top: -20%; }
-      @media (max-width: 640px) {
+      @media (max-width: 768px) {
         header + .quote:before {
           top: 0; } }
   header .anchor {
@@ -658,7 +706,7 @@ header {
       width: 60px; }
     header .anchor:hover {
       transform: rotate(15deg); }
-    @media (max-width: 640px) {
+    @media (max-width: 768px) {
       header .anchor {
         top: 36px; }
         header .anchor .anchor-svg {
@@ -694,6 +742,8 @@ header {
     fill: #fdedb2; }
   header.rome .anchor:hover .anchor-svg {
     fill: #77EEDF; }
+  header.santiago .anchor:hover .anchor-svg {
+    fill: #f0e400; }
   header.slovenia .anchor:hover .anchor-svg {
     fill: #75FFC0; }
   header.southafrica .anchor:hover .anchor-svg {
@@ -704,6 +754,8 @@ header {
     fill: #FDF06F; }
   header.tofo .anchor:hover .anchor-svg {
     fill: #FF8FA4; }
+  header.torresdelpaine .anchor:hover .anchor-svg {
+    fill: #BEA1A5; }
 
 #map {
   height: 70vh;
@@ -753,7 +805,7 @@ a[href^="https://maps.google.com/maps"] {
           top: 38%; }
       .nav-wrapper .nav .item:hover .overlay {
         background: rgba(0, 0, 0, 0.75); }
-      @media (max-width: 640px) {
+      @media (max-width: 768px) {
         .nav-wrapper .nav .item {
           margin: 1px 0;
           max-width: none;
@@ -792,6 +844,8 @@ a[href^="https://maps.google.com/maps"] {
       color: #fdedb2; }
     .nav-wrapper .nav a[href*="rome"]:hover .overlay .title {
       color: #77EEDF; }
+    .nav-wrapper .nav a[href*="santiago"]:hover .overlay .title {
+      color: #f0e400; }
     .nav-wrapper .nav a[href*="slovenia"]:hover .overlay .title {
       color: #75FFC0; }
     .nav-wrapper .nav a[href*="southafrica"]:hover .overlay .title {
@@ -802,7 +856,9 @@ a[href^="https://maps.google.com/maps"] {
       color: #FDF06F; }
     .nav-wrapper .nav a[href*="tofo"]:hover .overlay .title {
       color: #FF8FA4; }
-    @media (max-width: 640px) {
+    .nav-wrapper .nav a[href*="torresdelpaine"]:hover .overlay .title {
+      color: #BEA1A5; }
+    @media (max-width: 768px) {
       .nav-wrapper .nav a[href*="argentina"] .overlay .title {
         color: #B7E3E4; }
       .nav-wrapper .nav a[href*="australia"] .overlay .title {
@@ -833,6 +889,8 @@ a[href^="https://maps.google.com/maps"] {
         color: #fdedb2; }
       .nav-wrapper .nav a[href*="rome"] .overlay .title {
         color: #77EEDF; }
+      .nav-wrapper .nav a[href*="santiago"] .overlay .title {
+        color: #f0e400; }
       .nav-wrapper .nav a[href*="slovenia"] .overlay .title {
         color: #75FFC0; }
       .nav-wrapper .nav a[href*="southafrica"] .overlay .title {
@@ -842,7 +900,9 @@ a[href^="https://maps.google.com/maps"] {
       .nav-wrapper .nav a[href*="thailand"] .overlay .title {
         color: #FDF06F; }
       .nav-wrapper .nav a[href*="tofo"] .overlay .title {
-        color: #FF8FA4; } }
+        color: #FF8FA4; }
+      .nav-wrapper .nav a[href*="torresdelpaine"] .overlay .title {
+        color: #BEA1A5; } }
 
 .overlay {
   background: rgba(0, 0, 0, 0.65);
@@ -863,7 +923,7 @@ a[href^="https://maps.google.com/maps"] {
   @media (max-width: 767px) {
     .overlay {
       font-size: 80%; } }
-  @media (max-width: 640px) {
+  @media (max-width: 768px) {
     .overlay {
       font-size: 70%;
       opacity: 1; } }
@@ -893,7 +953,7 @@ header.home h1 {
 header.home h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 2em; }
-  @media (max-width: 640px) {
+  @media (max-width: 768px) {
     header.home h2 {
       font-size: 1em; } }
 header.home .quote {
@@ -906,7 +966,7 @@ header.home .anchor-svg {
   height: 80px;
   width: 80px;
   fill: #FDF06F; }
-  @media (max-width: 640px) {
+  @media (max-width: 768px) {
     header.home .anchor-svg {
       height: 40px;
       width: 40px; } }
@@ -929,7 +989,7 @@ header.home .anchor-svg {
     width: 50%; }
     #photos a:nth-of-type(odd) .thumb {
       margin-right: 0px; }
-    @media (max-width: 640px) {
+    @media (max-width: 768px) {
       #photos a {
         width: 100%; } }
   #photos a[href*="argentina"]:hover .overlay .title {
@@ -962,6 +1022,8 @@ header.home .anchor-svg {
     color: #fdedb2; }
   #photos a[href*="rome"]:hover .overlay .title {
     color: #77EEDF; }
+  #photos a[href*="santiago"]:hover .overlay .title {
+    color: #f0e400; }
   #photos a[href*="slovenia"]:hover .overlay .title {
     color: #75FFC0; }
   #photos a[href*="southafrica"]:hover .overlay .title {
@@ -972,7 +1034,9 @@ header.home .anchor-svg {
     color: #FDF06F; }
   #photos a[href*="tofo"]:hover .overlay .title {
     color: #FF8FA4; }
-  @media (max-width: 640px) {
+  #photos a[href*="torresdelpaine"]:hover .overlay .title {
+    color: #BEA1A5; }
+  @media (max-width: 768px) {
     #photos a[href*="argentina"] .overlay .title {
       color: #B7E3E4; }
     #photos a[href*="australia"] .overlay .title {
@@ -1003,6 +1067,8 @@ header.home .anchor-svg {
       color: #fdedb2; }
     #photos a[href*="rome"] .overlay .title {
       color: #77EEDF; }
+    #photos a[href*="santiago"] .overlay .title {
+      color: #f0e400; }
     #photos a[href*="slovenia"] .overlay .title {
       color: #75FFC0; }
     #photos a[href*="southafrica"] .overlay .title {
@@ -1012,11 +1078,13 @@ header.home .anchor-svg {
     #photos a[href*="thailand"] .overlay .title {
       color: #FDF06F; }
     #photos a[href*="tofo"] .overlay .title {
-      color: #FF8FA4; } }
+      color: #FF8FA4; }
+    #photos a[href*="torresdelpaine"] .overlay .title {
+      color: #BEA1A5; } }
 
 .thumb {
   position: relative; }
-  @media (max-width: 640px) {
+  @media (max-width: 768px) {
     .thumb {
       margin: .5% 0; } }
   .thumb:hover .overlay {
